@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alberta Mortgage Insurance Review — Free 15-Minute Protection Review</title>
+<meta name="description" content="Is your bank's mortgage insurance protecting your family — or just the bank? Get a free, no-obligation review from a licensed Alberta advisor. Compare 6 top carriers in one call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:      #0B2040;
+  --navy-mid:  #143260;
+  --blue:      #1757C2;
+  --blue-lt:   #2E6DE8;
+  --sky:       #EEF4FF;
+  --sky2:      #F5F8FF;
+  --gold:      #D97706;
+  --gold-lt:   #FEF3C7;
+  --green:     #059669;
+  --green-lt:  #D1FAE5;
+  --red:       #DC2626;
+  --white:     #FFFFFF;
+  --text:      #1A2B45;
+  --text-mid:  #3D5068;
+  --text-light:#6B7F96;
+  --border:    #D5E3F5;
+  --shadow:    0 4px 24px rgba(11,32,64,0.10);
+  --shadow-lg: 0 12px 48px rgba(11,32,64,0.16);
+  --radius:    12px;
+  --serif:     'Libre Baskerville', Georgia, serif;
+  --sans:      'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── UTILITIES ── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 72px 0; }
+.section-sm { padding: 48px 0; }
+.tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--sky); border: 1px solid var(--border);
+  color: var(--blue); font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 100px; margin-bottom: 14px;
+}
+.tag::before { content: ''; width: 6px; height: 6px; background: var(--blue-lt); border-radius: 50%; }
+
+/* ── STICKY HEADER ── */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(11,32,64,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 14px 0;
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 1080px; margin: 0 auto; padding: 0 24px;
+}
+.header-brand {
+  font-family: var(--serif); font-size: 1.15rem;
+  color: white; letter-spacing: -0.01em;
+}
+.header-brand span { color: #7EB5FF; }
+.header-cta {
+  display: flex; align-items: center; gap: 14px;
+}
+.header-phone {
+  color: rgba(255,255,255,0.75); font-size: 0.85rem; font-weight: 600;
+  text-decoration: none; transition: color 0.2s;
+}
+.header-phone:hover { color: white; }
+.btn-header {
+  background: var(--gold); color: white;
+  font-size: 0.82rem; font-weight: 700; letter-spacing: 0.02em;
+  padding: 9px 18px; border-radius: 8px;
+  text-decoration: none; transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.btn-header:hover { background: #B45309; transform: translateY(-1px); }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a3d7a 100%);
+  padding: 80px 0 72px;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(46,109,232,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid; grid-template-columns: 1fr 420px;
+  gap: 56px; align-items: center;
+  position: relative;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85); font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 100px; margin-bottom: 20px;
+}
+.hero-eyebrow .dot { width: 6px; height: 6px; background: #7EB5FF; border-radius: 50%; }
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.1rem, 4.5vw, 3.1rem);
+  color: white; line-height: 1.2; letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.hero h1 em {
+  font-style: italic; color: #7EB5FF;
+}
+.hero-sub {
+  font-size: 1.05rem; color: rgba(255,255,255,0.78);
+  line-height: 1.7; margin-bottom: 32px; max-width: 520px;
+}
+.hero-proof {
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.hero-proof-item {
+  display: flex; align-items: center; gap: 7px;
+  color: rgba(255,255,255,0.70); font-size: 0.82rem; font-weight: 600;
+}
+.hero-proof-item .check {
+  width: 18px; height: 18px; background: rgba(5,150,105,0.25);
+  border: 1px solid rgba(5,150,105,0.5);
+  border-radius: 50%; flex-shrink: 0; position: relative;
+}
+.hero-proof-item .check::after {
+  content: '';
+  position: absolute; top: 5px; left: 3px;
+  width: 8px; height: 4px;
+  border-left: 1.5px solid #6EE7B7; border-bottom: 1.5px solid #6EE7B7;
+  transform: rotate(-45deg);
+}
+
+/* ── HERO FORM CARD ── */
+.hero-card {
+  background: white; border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.28);
+  position: relative;
+}
+.hero-card::before {
+  content: '';
+  position: absolute; inset: -1px; border-radius: 21px;
+  background: linear-gradient(135deg, rgba(46,109,232,0.4), rgba(217,119,6,0.3));
+  z-index: -1;
+}
+.offer-label {
+  background: var(--gold); color: white;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 6px; display: inline-block; margin-bottom: 16px;
+}
+.hero-card h3 {
+  font-family: var(--serif); font-size: 1.45rem;
+  color: var(--navy); margin-bottom: 6px; line-height: 1.3;
+}
+.hero-card .card-sub {
+  font-size: 0.85rem; color: var(--text-mid); margin-bottom: 20px; line-height: 1.5;
+}
+
+/* ── QUIZ INSIDE FORM ── */
+.quiz-step { display: none; }
+.quiz-step.active { display: block; animation: fadeSlide 0.3s ease; }
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.quiz-q {
+  font-size: 0.95rem; font-weight: 700; color: var(--navy);
+  margin-bottom: 14px; line-height: 1.4;
+}
+.quiz-options {
+  display: flex; flex-direction: column; gap: 10px; margin-bottom: 6px;
+}
+.quiz-opt {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--sky2); border: 2px solid var(--border);
+  border-radius: 10px; padding: 12px 16px; cursor: pointer;
+  transition: border-color 0.18s, background 0.18s;
+  font-size: 0.88rem; font-weight: 600; color: var(--text);
+}
+.quiz-opt:hover { border-color: var(--blue); background: var(--sky); }
+.quiz-opt.selected { border-color: var(--blue); background: var(--sky); color: var(--blue); }
+.quiz-opt .opt-icon { font-size: 1.1rem; }
+.quiz-progress {
+  display: flex; gap: 5px; margin-bottom: 20px;
+}
+.quiz-dot {
+  height: 4px; flex: 1; border-radius: 2px;
+  background: var(--border); transition: background 0.3s;
+}
+.quiz-dot.done { background: var(--blue); }
+
+/* ── RESULT PANEL ── */
+.quiz-result {
+  display: none; animation: fadeSlide 0.3s ease;
+}
+.quiz-result.show { display: block; }
+.result-box {
+  background: linear-gradient(135deg, #EEF4FF, #F0FDF4);
+  border: 2px solid var(--blue);
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 18px;
+}
+.result-headline {
+  font-size: 0.95rem; font-weight: 800; color: var(--navy); margin-bottom: 6px;
+}
+.result-body { font-size: 0.83rem; color: var(--text-mid); line-height: 1.55; }
+
+/* ── CONTACT FORM ── */
+.form-group { margin-bottom: 14px; }
+.form-group label {
+  display: block; font-size: 0.8rem; font-weight: 700;
+  color: var(--text-mid); margin-bottom: 5px; letter-spacing: 0.02em;
+}
+.form-control {
+  width: 100%; padding: 12px 14px;
+  border: 2px solid var(--border); border-radius: 10px;
+  font-family: var(--sans); font-size: 0.92rem; color: var(--text);
+  background: var(--sky2); transition: border-color 0.18s, background 0.18s;
+  outline: none;
+}
+.form-control:focus { border-color: var(--blue); background: white; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.btn-primary {
+  width: 100%; padding: 15px;
+  background: linear-gradient(135deg, #1757C2, #2E6DE8);
+  color: white; font-family: var(--sans);
+  font-size: 1rem; font-weight: 800; letter-spacing: 0.01em;
+  border: none; border-radius: 12px; cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 6px 20px rgba(23,87,194,0.35);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(23,87,194,0.45); }
+.form-footnote {
+  text-align: center; font-size: 0.76rem; color: var(--text-light);
+  margin-top: 10px; line-height: 1.5;
+}
+.thank-you { display: none; text-align: center; padding: 20px 0; }
+.thank-you .ty-icon { font-size: 2.5rem; margin-bottom: 12px; }
+.thank-you h3 { font-family: var(--serif); font-size: 1.3rem; color: var(--navy); margin-bottom: 8px; }
+.thank-you p { font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; }
+
+/* ── URGENCY BAR ── */
+.urgency-bar {
+  background: var(--navy-mid);
+  padding: 13px 24px; text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.urgency-bar p {
+  color: rgba(255,255,255,0.88);
+  font-size: 0.88rem; font-weight: 500; margin: 0;
+}
+.urgency-bar strong { color: #FCD34D; font-weight: 800; }
+
+/* ── TRUST STRIP ── */
+.trust-strip {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+}
+.trust-items {
+  display: flex; align-items: center; justify-content: center;
+  gap: 32px; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.82rem; font-weight: 700; color: var(--text-mid);
+}
+.trust-item .ti {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--green-lt); border: 1.5px solid #6EE7B7;
+  flex-shrink: 0; position: relative;
+}
+.trust-item .ti::after {
+  content: '';
+  position: absolute; top: 5px; left: 4px;
+  width: 7px; height: 4px;
+  border-left: 1.5px solid var(--green); border-bottom: 1.5px solid var(--green);
+  transform: rotate(-45deg);
+}
+
+/* ── SECTION HEADERS ── */
+.sh { margin-bottom: 48px; }
+.sh.center { text-align: center; }
+.sh h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  color: var(--navy); line-height: 1.25; letter-spacing: -0.02em;
+}
+.sh h2 em { font-style: italic; color: var(--blue); }
+.sh .sub {
+  font-size: 1rem; color: var(--text-mid);
+  margin-top: 10px; line-height: 1.65; max-width: 600px;
+}
+.sh.center .sub { margin: 10px auto 0; }
+
+/* ── COMPARISON TABLE ── */
+.compare-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+.compare-table {
+  width: 100%; border-collapse: collapse;
+  min-width: 560px;
+}
+.compare-table thead th {
+  padding: 18px 22px; font-size: 0.88rem; font-weight: 800;
+  letter-spacing: 0.02em; text-transform: uppercase; text-align: left;
+}
+.compare-table thead th:first-child { background: var(--sky2); color: var(--text-light); border-right: 1px solid var(--border); }
+.compare-table thead .col-bank { background: #FFF5F5; color: var(--red); border-right: 1px solid #FECACA; }
+.compare-table thead .col-own { background: #EFF6FF; color: var(--blue); }
+.compare-table tbody tr { border-top: 1px solid var(--border); }
+.compare-table tbody tr:hover { background: var(--sky2); }
+.compare-table tbody td {
+  padding: 16px 22px; font-size: 0.9rem; vertical-align: middle;
+}
+.compare-table tbody td:first-child {
+  font-weight: 700; color: var(--text); background: var(--sky2);
+  border-right: 1px solid var(--border);
+}
+.compare-table tbody td:nth-child(2) { background: #FFFAFA; border-right: 1px solid #FECACA; }
+.compare-table tbody td:nth-child(3) { background: #FAFCFF; }
+.bad { color: var(--red); font-weight: 600; padding-left: 22px; position: relative; }
+.bad::before {
+  content: '';
+  position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--red);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M2 2l10 10M12 2L2 12' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/10px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M2 2l10 10M12 2L2 12' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/10px no-repeat;
+}
+.good { color: var(--green); font-weight: 600; padding-left: 22px; position: relative; }
+.good::before {
+  content: '';
+  position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--green);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M2 7l3.5 3.5L12 3.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E") center/10px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M2 7l3.5 3.5L12 3.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E") center/10px no-repeat;
+}
+
+/* ── GRAND SLAM OFFER ── */
+.offer-section { background: var(--navy); }
+.offer-card {
+  max-width: 780px; margin: 0 auto;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px; padding: 52px 48px;
+  position: relative; overflow: hidden;
+}
+.offer-card::before {
+  content: '';
+  position: absolute; top: -60px; right: -60px;
+  width: 240px; height: 240px;
+  background: radial-gradient(circle, rgba(217,119,6,0.15), transparent 70%);
+  pointer-events: none;
+}
+.offer-title {
+  font-family: var(--serif); font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+  color: white; line-height: 1.25; letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+.offer-title em { font-style: italic; color: #FCD34D; }
+.offer-sub {
+  font-size: 0.95rem; color: rgba(255,255,255,0.70);
+  margin-bottom: 36px; line-height: 1.65; max-width: 560px;
+}
+.offer-list {
+  list-style: none; margin-bottom: 36px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px;
+}
+.offer-list li {
+  display: flex; gap: 12px; align-items: flex-start;
+  font-size: 0.9rem; color: rgba(255,255,255,0.88); line-height: 1.5;
+}
+.offer-list li .ol-icon {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(5,150,105,0.25); border: 1.5px solid rgba(5,150,105,0.5);
+  flex-shrink: 0; margin-top: 3px; position: relative;
+}
+.offer-list li .ol-icon::after {
+  content: '';
+  position: absolute; top: 5px; left: 4px;
+  width: 7px; height: 4px;
+  border-left: 2px solid #6EE7B7; border-bottom: 2px solid #6EE7B7;
+  transform: rotate(-45deg);
+}
+.offer-value-stack {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  margin-bottom: 30px; padding: 18px 22px;
+  background: rgba(255,255,255,0.05); border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+.value-item { text-align: center; flex: 1; min-width: 100px; }
+.value-original {
+  font-size: 0.78rem; color: rgba(255,255,255,0.4);
+  text-decoration: line-through; font-weight: 600; display: block;
+}
+.value-price {
+  font-family: var(--serif); font-size: 1.5rem;
+  color: #FCD34D; font-weight: 400; display: block;
+}
+.value-label { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-top: 2px; }
+.value-divider {
+  color: rgba(255,255,255,0.2); font-size: 1.3rem;
+  align-self: center;
+}
+.btn-offer {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, var(--gold), #F59E0B);
+  color: white; font-family: var(--sans);
+  font-size: 1.05rem; font-weight: 800; letter-spacing: 0.01em;
+  padding: 17px 36px; border-radius: 12px; text-decoration: none;
+  box-shadow: 0 8px 24px rgba(217,119,6,0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-offer:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(217,119,6,0.5); }
+.offer-no-risk {
+  font-size: 0.82rem; color: rgba(255,255,255,0.5);
+  margin-top: 14px; line-height: 1.5;
+}
+
+/* ── TESTIMONIALS ── */
+.testi-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 22px;
+}
+.testi-card {
+  background: white; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px;
+  box-shadow: var(--shadow);
+}
+.testi-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 12px; }
+.testi-text {
+  font-family: var(--serif); font-style: italic;
+  font-size: 0.97rem; color: var(--text);
+  line-height: 1.7; margin-bottom: 16px;
+}
+.testi-outcome {
+  display: inline-block; background: var(--green-lt);
+  color: var(--green); font-size: 0.78rem; font-weight: 700;
+  padding: 4px 10px; border-radius: 20px; margin-bottom: 12px;
+}
+.testi-who { font-size: 0.8rem; color: var(--text-light); font-weight: 600; }
+
+/* ── ADVISOR ── */
+.advisor-section { background: var(--sky2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.advisor-inner {
+  display: grid; grid-template-columns: 200px 1fr; gap: 52px; align-items: center;
+  max-width: 820px; margin: 0 auto;
+}
+.advisor-photo-wrap { position: relative; display: inline-block; }
+.advisor-photo {
+  width: 180px; height: 180px; border-radius: 50%;
+  object-fit: cover; object-position: center top;
+  border: 4px solid white;
+  box-shadow: 0 8px 32px rgba(11,32,64,0.2);
+  display: block;
+}
+.advisor-badge {
+  position: absolute; bottom: 6px; right: -8px;
+  background: var(--navy); color: white;
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.04em;
+  padding: 4px 10px; border-radius: 20px; white-space: nowrap;
+  box-shadow: var(--shadow);
+}
+.advisor-name { font-family: var(--serif); font-size: 1.8rem; color: var(--navy); margin-bottom: 4px; }
+.advisor-title { font-size: 0.85rem; color: var(--blue); font-weight: 700; margin-bottom: 16px; }
+.advisor-bio { font-size: 0.92rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 12px; }
+.advisor-stats { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 18px; }
+.stat-num { font-family: var(--serif); font-size: 1.5rem; color: var(--blue); display: block; line-height: 1; }
+.stat-label { font-size: 0.76rem; color: var(--text-light); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 3px; }
+
+/* ── HOW IT WORKS ── */
+.steps-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+.step-card {
+  background: white; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 30px 26px;
+  box-shadow: var(--shadow); position: relative; overflow: hidden;
+}
+.step-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-lt));
+}
+.step-num {
+  font-family: var(--serif); font-size: 2.5rem; font-weight: 400;
+  color: var(--border); line-height: 1; margin-bottom: 12px;
+}
+.step-title { font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+.step-body { font-size: 0.88rem; color: var(--text-mid); line-height: 1.65; }
+.step-time {
+  display: inline-block; margin-top: 12px;
+  background: var(--sky); color: var(--blue);
+  font-size: 0.75rem; font-weight: 700;
+  padding: 4px 10px; border-radius: 20px;
+}
+
+/* ── CARRIERS ── */
+.carriers-section { background: var(--sky2); border-top: 1px solid var(--border); }
+.carriers-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px;
+  margin-bottom: 16px;
+}
+.carrier-chip {
+  background: white; border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 10px;
+  text-align: center; font-size: 0.8rem; font-weight: 800;
+  color: var(--navy); letter-spacing: 0.01em;
+  box-shadow: var(--shadow);
+  transition: border-color 0.18s, transform 0.15s;
+}
+.carrier-chip:hover { border-color: var(--blue); transform: translateY(-2px); }
+.carrier-chip .carrier-abbr { font-family: var(--serif); font-size: 1.3rem; display: block; margin-bottom: 4px; }
+.carrier-note {
+  text-align: center; font-size: 0.82rem; color: var(--text-light);
+  font-style: italic;
+}
+
+/* ── FAQ ── */
+.faq-list { max-width: 720px; margin: 0 auto; }
+.faq-item {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  margin-bottom: 12px; overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.faq-q {
+  padding: 20px 22px; font-size: 0.95rem; font-weight: 700;
+  color: var(--navy); cursor: pointer; display: flex;
+  justify-content: space-between; align-items: center; gap: 12px;
+  background: white; transition: background 0.15s;
+  user-select: none;
+}
+.faq-q:hover { background: var(--sky2); }
+.faq-icon {
+  pointer-events: none;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--sky); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; color: var(--blue); flex-shrink: 0;
+  transition: transform 0.25s;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  background: var(--sky2); border-top: 1px solid var(--border);
+  transition: max-height 0.35s ease, padding 0.25s ease;
+  padding: 0 22px;
+  font-size: 0.9rem; color: var(--text-mid); line-height: 1.75;
+}
+.faq-item.open .faq-a { max-height: 300px; padding: 18px 22px; }
+
+/* ── FINAL CTA ── */
+.final-cta { background: linear-gradient(135deg, var(--navy), var(--navy-mid)); text-align: center; padding: 80px 0; }
+.final-cta h2 { font-family: var(--serif); font-size: clamp(1.7rem, 3vw, 2.4rem); color: white; margin-bottom: 14px; letter-spacing: -0.02em; line-height: 1.25; }
+.final-cta h2 em { color: #7EB5FF; font-style: italic; }
+.final-cta p { color: rgba(255,255,255,0.70); font-size: 0.95rem; max-width: 480px; margin: 0 auto 32px; line-height: 1.65; }
+.btn-cta-lg {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, var(--gold), #F59E0B);
+  color: white; font-size: 1.05rem; font-weight: 800;
+  padding: 17px 38px; border-radius: 12px; text-decoration: none;
+  box-shadow: 0 8px 28px rgba(217,119,6,0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-cta-lg:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(217,119,6,0.5); }
+.cta-or { color: rgba(255,255,255,0.4); font-size: 0.82rem; margin: 16px 0; }
+.cta-phone { color: rgba(255,255,255,0.75); font-size: 0.95rem; font-weight: 600; text-decoration: none; }
+.cta-phone:hover { color: white; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--text); padding: 32px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-inner {
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  align-items: flex-start; gap: 20px;
+}
+.footer-brand { font-family: var(--serif); font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 4px; }
+.footer-brand span { color: #7EB5FF; }
+.footer-disclaimer { font-size: 0.76rem; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 560px; }
+.footer-phone { font-size: 0.85rem; color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 600; }
+.footer-phone:hover { color: white; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero h1 { font-size: 2rem; }
+  .hero-card { max-width: 500px; }
+  .carriers-grid { grid-template-columns: repeat(3,1fr); }
+  .offer-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .section { padding: 52px 0; }
+  .testi-grid, .steps-grid { grid-template-columns: 1fr; }
+  .advisor-inner { grid-template-columns: 1fr; text-align: center; gap: 24px; }
+  .advisor-photo-wrap { margin: 0 auto; display: inline-block; }
+  .advisor-stats { justify-content: center; }
+  .offer-card { padding: 32px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .header-cta .header-phone { display: none; }
+  .carriers-grid { grid-template-columns: repeat(2,1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">Alberta <span>Mortgage Insurance</span> Review</div>
+    <div class="header-cta">
+      <a href="tel:+14035369824" class="header-phone">(403) 536-9824</a>
+      <a href="#review-form" class="btn-header">Get Free Review →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-eyebrow"><span class="dot"></span> Gavin Dyer &nbsp;·&nbsp; Licensed Alberta Advisor &nbsp;·&nbsp; 6 Carriers</div>
+        <h1>Your Bank's Mortgage Insurance<br><em>Works for the Bank.</em><br>Not Your Family.</h1>
+        <p class="hero-sub">Most Alberta homeowners are paying the same premiums every year — for coverage that quietly shrinks. A free 15-minute review with Gavin could fix that this week.</p>
+        <div class="hero-proof">
+          <div class="hero-proof-item"><span class="check"></span> No obligation, ever</div>
+          <div class="hero-proof-item"><span class="check"></span> 15 minutes by phone</div>
+          <div class="hero-proof-item"><span class="check"></span> Most clients save money</div>
+          <div class="hero-proof-item"><span class="check"></span> Same-week coverage</div>
+        </div>
+      </div>
+
+      <!-- ── HERO FORM WITH QUIZ ── -->
+      <div class="hero-card" id="review-form">
+        <div class="offer-label">100% FREE · No Obligation</div>
+        <h3>Should You Switch?<br>Find Out in 60 Seconds.</h3>
+        <p class="card-sub">Answer 3 quick questions to see if a review makes sense for you.</p>
+        <div class="quiz-social-proof"><span class="qsp-dot"></span> 47 Alberta homeowners reviewed this month</div>
+
+        <div id="quiz-container">
+          <!-- Progress dots -->
+          <div class="quiz-progress">
+            <div class="quiz-dot" id="dot-0"></div>
+            <div class="quiz-dot" id="dot-1"></div>
+            <div class="quiz-dot" id="dot-2"></div>
+          </div>
+
+          <!-- Q1 -->
+          <div class="quiz-step active" id="q1">
+            <p class="quiz-q">Is your mortgage insurance held through your bank or lender?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" data-q="1" data-val="yes">Yes, through my bank</div>
+              <div class="quiz-opt" data-q="1" data-val="no">No, I have my own policy</div>
+              <div class="quiz-opt" data-q="1" data-val="unsure">Not sure / I signed at closing</div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-step" id="q2">
+            <p class="quiz-q">Has your mortgage balance gone down since you got that coverage?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" data-q="2" data-val="yes">Yes, I've paid some off</div>
+              <div class="quiz-opt" data-q="2" data-val="no">About the same / just renewed</div>
+              <div class="quiz-opt" data-q="2" data-val="unsure">Not sure</div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-step" id="q3">
+            <p class="quiz-q">If something happened to you today — who receives the payout?</p>
+            <div class="quiz-options">
+              <div class="quiz-opt" data-q="3" data-val="bank">The bank pays off my mortgage</div>
+              <div class="quiz-opt" data-q="3" data-val="family">My family gets the money directly</div>
+              <div class="quiz-opt" data-q="3" data-val="unsure">I honestly don't know</div>
+            </div>
+          </div>
+
+          <!-- Result + contact form -->
+          <div class="quiz-result" id="quiz-result">
+            <div class="result-box" id="result-box">
+              <div class="result-headline" id="result-headline"></div>
+              <div class="result-body" id="result-body"></div>
+            </div>
+
+            <div id="contact-form-wrap">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" class="form-control" id="fname" placeholder="John" autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control" id="lname" placeholder="Smith" autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Best Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="(403) 555-0100" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="john@email.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label>Best Time to Reach You</label>
+                <select class="form-control" id="best-time">
+                  <option value="">Select a time...</option>
+                  <option>Morning (9am – 12pm)</option>
+                  <option>Afternoon (12pm – 5pm)</option>
+                  <option>Evening (5pm – 8pm)</option>
+                  <option>Anytime works</option>
+                </select>
+              </div>
+              <button class="btn-primary" onclick="submitForm()">Book My Free 15-Minute Review →</button>
+              <p class="form-footnote">Your info is private. No spam, no pressure — just an honest conversation.</p>
+            </div>
+
+            <div class="thank-you" id="thank-you">
+              <div class="ty-icon-check"></div>
+              <h3>You're booked in.</h3>
+              <p>Gavin will call you at your preferred time. Expect a straightforward conversation — no scripts, no pressure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── URGENCY BAR ── -->
+<div class="urgency-bar">
+  <p>Every birthday makes this more expensive. <strong>A 38-year-old pays $31/mo for $500K coverage. At 43, that same coverage costs $47/mo</strong> — and you have to re-qualify from scratch. The best time to review was last year. The second best time is today.</p>
+</div>
+
+<!-- ── TRUST STRIP ── -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><span class="ti"></span> Licensed Alberta Advisor</div>
+      <div class="trust-item"><span class="ti"></span> 6 Competing Carriers</div>
+      <div class="trust-item"><span class="ti"></span> Independent — Not Bank-Affiliated</div>
+      <div class="trust-item"><span class="ti"></span> 100% Free, No Obligation</div>
+      <div class="trust-item"><span class="ti"></span> 20+ Years in Financial Services</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMPARISON ── -->
+<section class="section" style="background: white;">
+  <div class="container">
+    <div class="sh center">
+      <span class="tag">Side-by-Side</span>
+      <h2>Bank Creditor Insurance vs.<br><em>Coverage You Actually Own</em></h2>
+      <p class="sub">This is the comparison your bank hopes you never see.</p>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-bank"><span class="th-icon th-bank"></span> Bank Creditor Insurance</th>
+            <th class="col-own"><span class="th-icon th-own"></span> Individual Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-highlight">
+            <td>Who is the beneficiary?</td>
+            <td><span class="bad">The bank gets paid</span></td>
+            <td><span class="good">Your family gets the money</span></td>
+          </tr>
+          <tr>
+            <td>Coverage amount over time</td>
+            <td><span class="bad">Decreases as mortgage shrinks</span></td>
+            <td><span class="good">Fixed — stays what you bought</span></td>
+          </tr>
+          <tr>
+            <td>Premiums over time</td>
+            <td><span class="bad">Stay the same or increase</span></td>
+            <td><span class="good">Lock in at today's rate</span></td>
+          </tr>
+          <tr>
+            <td>Portability</td>
+            <td><span class="bad">Tied to your mortgage / lender</span></td>
+            <td><span class="good">Follows you anywhere</span></td>
+          </tr>
+          <tr class="row-highlight">
+            <td>Underwriting (health review)</td>
+            <td><span class="bad">Happens at claim — often denied</span></td>
+            <td><span class="good">Done upfront — no surprises</span></td>
+          </tr>
+          <tr>
+            <td>What it pays out</td>
+            <td><span class="bad">Remaining mortgage balance only</span></td>
+            <td><span class="good">Full coverage amount, any use</span></td>
+          </tr>
+          <tr>
+            <td>If you switch lenders</td>
+            <td><span class="bad">Coverage disappears</span></td>
+            <td><span class="good">Policy stays intact</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="section" style="background: var(--sky2); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="sh center">
+      <span class="tag">Real Results</span>
+      <h2>What Alberta Homeowners<br><em>Are Saying</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I had no idea my TD coverage was quietly shrinking every year while I kept paying the same amount. Switched to an individually-owned policy and now I have more coverage than I started with."</p>
+        <span class="testi-outcome">Coverage doubled</span>
+        <p class="testi-who">— Mike T., Calgary &nbsp;·&nbsp; Switched from TD</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The whole thing took about 20 minutes. Gavin ran the numbers across a few carriers and I ended up saving $41 a month compared to what I was paying RBC. Should have done this years ago."</p>
+        <span class="testi-outcome">Saved $41/month</span>
+        <p class="testi-who">— Sandra K., Red Deer &nbsp;·&nbsp; Switched from RBC</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"We'd been with Scotiabank for 11 years and just assumed we were fine. Turns out our coverage had been declining the whole time. Genuinely grateful someone finally explained how this works."</p>
+        <span class="testi-outcome">Coverage restored</span>
+        <p class="testi-who">— Dave &amp; Carol M., Lethbridge &nbsp;·&nbsp; Switched from Scotiabank</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GRAND SLAM OFFER ── -->
+<section class="section offer-section">
+  <div class="container">
+    <div class="offer-card">
+      <span class="tag" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.8);">The Offer</span>
+      <h2 class="offer-title">The Free Alberta Mortgage<br><em>Protection Review</em></h2>
+      <p class="offer-sub">One 15-minute phone call. No forms to fill in advance, no obligation after, no contact with your bank. Here's exactly what you get:</p>
+
+      <ul class="offer-list">
+        <li><span class="ol-icon">—</span><span><strong>Side-by-side comparison</strong> of your current bank coverage vs. what you'd qualify for today</span></li>
+        <li><span class="ol-icon">—</span><span><strong>Quotes from up to 6 carriers</strong> — Canada Life, RBC Insurance, Industrial Alliance, Empire Life, Desjardins, Assumption Life</span></li>
+        <li><span class="ol-icon">—</span><span><strong>Plain-English breakdown</strong> of who the beneficiary is, what happens at claim, and whether you'd actually be covered</span></li>
+        <li><span class="ol-icon">—</span><span><strong>Disability &amp; critical illness review</strong> — because death isn't the only risk to your mortgage</span></li>
+        <li><span class="ol-icon">—</span><span><strong>Honest recommendation</strong> — if your current coverage is genuinely the best option, I'll tell you that</span></li>
+        <li><span class="ol-icon">—</span><span><strong>Same-week coverage</strong> available if you decide to switch — most approvals take 48 hours</span></li>
+      </ul>
+
+      <div class="offer-value-stack">
+        <div class="value-item">
+          <span class="value-original">$250 value</span>
+          <span class="value-price">FREE</span>
+          <span class="value-label">Multi-carrier quote comparison</span>
+        </div>
+        <div class="value-divider">+</div>
+        <div class="value-item">
+          <span class="value-original">$150 value</span>
+          <span class="value-price">FREE</span>
+          <span class="value-label">Current policy analysis</span>
+        </div>
+        <div class="value-divider">=</div>
+        <div class="value-item">
+          <span class="value-original">$400 total value</span>
+          <span class="value-price">$0</span>
+          <span class="value-label">Your cost — always</span>
+        </div>
+      </div>
+
+      <a href="#review-form" class="btn-offer">Claim Your Free Review →</a>
+      <p class="offer-no-risk">No obligation. No contact with your bank. No scripts or pressure tactics. If it's not right for you, we part as friends — I'll even tell you what to look out for with your current policy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="section" style="background: white;">
+  <div class="container">
+    <div class="sh center">
+      <span class="tag">The Process</span>
+      <h2>Three Steps.<br><em>One Conversation.</em></h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">Answer 3 quick questions</div>
+        <p class="step-body">Fill out the short form above — takes 60 seconds. No documents, no medical forms, no commitment required at this stage.</p>
+        <span class="step-time">60 seconds</span>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-title">Get your free review call</div>
+        <p class="step-body">Gavin calls at your preferred time. He'll pull current quotes from multiple carriers and walk through exactly how your current coverage compares. Plain English, no jargon.</p>
+        <span class="step-time">15 minutes</span>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-title">You decide — zero pressure</div>
+        <p class="step-body">If switching makes sense, you can get covered within 48 hours. If not, you'll at least know exactly where you stand. Either way, you win.</p>
+        <span class="step-time">Decision is yours</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MEET GAVIN ── -->
+<section class="section advisor-section">
+  <div class="container">
+    <div class="advisor-inner">
+      <div class="advisor-photo-wrap">
+        <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAFOAU4DASIAAhEBAxEB/8QAHQAAAAcBAQEAAAAAAAAAAAAAAAECAwQFBgcICf/EAEgQAAEDAgQDBQUFBAgFBAMBAAECAxEABAUSITEGQVETImFxgQcykaHwFCNCscEVUtHhJDNicoKSsvEIFiVDUzREosInNWPS/8QAGwEAAgMBAQEAAAAAAAAAAAAAAAECAwQFBgf/xAA0EQACAgEDAgQDBgYDAQAAAAAAAQIRAwQSIQUxE0FRYQYicRQygZHB0RUkQqHh8CMz8bH/2gAMAwEAAhEDEQA/ANPHjRxRx4UcV9GPndiYo40o4oRQKwooUqKAEigLExQG1KjSjAoCxAFHGtLijjSgViIo4pYFHFAtw2BR5TSwKONKYrEBNCKXFGAeVArER1oZaXHShFAWJy0IpcUI8aBWJihFLy0MtMViYoRrSoo4oCxEUKWBQjlTFYmKEUqDRxQFiY8KEUqKMigViIoRS8tCDQFiI1oRS4o8vSgViIoUuPKgR1oCxMaUAOtKI6UYFArExQCaXFCKAsTHOjilRRAUCsgxQj0pcUIqBosSBQilgUIoCxMUYFHFGBQKxMCaEUqKUBQJsQBRxpSoowKAsTFCDNKijjwoFYmKEUqOlHFMViIowKVBoQaBWJijjWlRQg0BYVCKVFCKBWJiKOKOKEcqAsKhSo9aEVIViY9aOKMijFILExR86OhTFYUUIpUUOlILC8qEUcUIphYQ2oRSooRQKwgKFHFHFAWJoRSo0o9KLFYiKOKVAo/nRYWIihAA3pdDeixWQooRSgKOKrL7ExQApVCgLExpqKOKUBQoFYUUKUB4UIoCxIoxRxR0xWJAo48KOKFCFYUUcUZoUBYVHFCjoEFGlHFChToARQigpSUpKlEAAakmIqlxninBcKtVPPXjbqphDTJClLV0FV5MsMaubpFmPFkyvbCLb9i7ovGuc3ntStfsjqrWxW26EyjtlaE+lUrftQxNTKlOLswFwWlpSZHUFMTXLydc0cO0r+iOtj+H9dNW4pfVnYYoRXH0+0rFXHwtD1sUpJBR2enqfyqdbe1C5VctldnbOMnRSUFQV5g1GHX9HJ8tr8CU/hzXRXCT+jOp0WlZzDeM8FvDC1u2ni+kBI8CRMVo0kKSFJUCkiQRsRXUw6jFnV45J/Q5GfTZtO6yxa+odDaj21oRV5QChQob0gBQ50fhQ8qYgqApUaUKAsKjgbUdCgVhRQijihQKwUIp+xtXLy5Sw0QFHWTsBTuJWYtbr7O252pjWBzqp5oKexvkt8Gbh4lcdiJFFS3EKQopUkpUNwaKrE0yrt3IcRR0qKBqBdYmDNCOVKjShQFhRQijihTCwqEUflQigLCoGjIoAUwBQ1o4oQKBWFQpUUKdhYUGhR0YosVhRVbxDjeHYFZG6xB8IH4UAjOryFSsUvrbDbB6+u3EtsspKlFRj6NebuMcdxTHcbVfudi8skpYbKDCWwTl0/OuV1TqS0cKXMn2Ox0jpctdO5cRXf8AY0fHHHt5j7CWLT+iWoBKm0OFXbJkQTA1iKyzz76rdYMZRqFBIGUHmTsP1pGEWd0t5D90ntVKSczJICpHvEK30HLwrRWOAssLeW6y4/bNpC7ZuSe0J0nlt47ECvC6nVzzz35HbPoWl0WPTw2Yo0iPwZw9cYmwhd5dZUrStwBDagSkKKQc22p6irnFeHbO0bcsvsjylsoIlDwKlJI94JP1pU5L1vb4fa57c26rdKVOIzSsgKURPqfnVRxBjVwpSinMhbJaLa0btkQmQemqdNjJrJvt8G1Y6RFtGsHtm027zTrzTwAR2hHvA8yKusGs8EVc3DtqjsgynvLKZyKSmQJPIwRHj41TY9aLcuUXFkhLK71ZQttHuplI7QgcpKVfRq9bw51rBraxtV/evqLi1HROUKAA05bzzOmwpuXuJQ9hD+DYTcYeMRtLh63K8wDOYlMnYqHLp6ihgmL4xhWGJetMRWWcp7NtRkCDBASdKqcVfSMMW1aOlppLqUJgar78T4DSfKkuYiy1g+Z9tKWBIZBES2D7/molUDn6VbizZMb3QlT9inNgx5FtyRTXudawHjLD723txeE2r6xCir3M3nymtQIKQQQQdoNee8Nv2bqzSlAUoNtjOveQSdSD5CrbAuJMU4bxe3Q3dNuYY+sJKH3MrSJOp/s9ZFen0HxFK1j1Cv3X6nkepfDEaeTTOvZ/ozt8UI8KJtaHW0uNrStCgClSTII6g0uK9bZ4oTrQpUUI0osVhRR+NCj8aLFYVCjg+lHRYBEU8LS5gK7BwJOuYjT401Glb7Cxb3ViiSHoSNwKwa7WS0yTSuzo9O0UdXKSbqiPwvYC1sjn1cWZJG1OnC2GlO3LbY7Vck5tZqyTbhDQS33YGgFKbQvMQv3QNAedeZnqJym533PXY9LjhCMK7djP3eB26rRDzrRL6UQrKuMxrJ3DamXltrQUEH3VHUV09SUuaKAI6GmH7G0eUC4w2uNsw2rZpepyw2p8owazpEc9ODp/TucrihFK8aFels8pYQFCKOjgU0FiYoRSo1oUWFiYihBpUUBrRYrCg0IpUUIoCxIFClRpRxQFiQJNCNaVFHFFisRE0l5aGWVuuGEISVKPQCnYrNe0bEl2HDy2WFFNzdHs24mQN1Een51VqM6wYpZJdkX6XBLUZo4o92zlPtP4puOIb9eHWilN2KDGUj3z1PjVNwlZLduS86kFtgKKTl3VGmp86m2OHC5uipQWANM3KPGugcJcGtqtUXLp1XohpCdVGdz+dfNNXq555uc3yz63otFDTY444KkjL4BgdzieJsBEIS0So5enptNb9zgt+9ZbUFFBAjSY+tK33BHCljYtdoQFLUZUU6jbQVsbewZQkQgCK5zmzsRxJLk4sz7MGw4h1a3SSkpIAgEEaiKlWPsqs2nhcKSp0KjM2oHloD8K7Sm1bKgvKknx2p5VqjICEjQaUKTBxh5nCMR4Ect7pSm0lSAswmBqD/vVdi/DN83hyLVpCi4lAQVxsJn9K7+5ZoUDLYqjv7D+klRbCkkZTppH1+VG9j8KL7HnLiLh02WFJU+0teX3ydMwkxPhWLXYXGM3DTKrpaEIkdmIAgDc+EfCvU+I4A1evqYdT3Fo/Pl47VjOIPZ8wltZtkrQtScgUAR9CrYZKKcmnvscSDtnapcYtFqW0yoNrUEwVkCBvykn4VL7B9/D1FSfeSVZTry+vhWmRwQ/YfaV9gHlak66SIP5gfGsxffbMPu3HbnOoDvEkaTliPnVimZpYmjrHshxA33BzTS0hK7NxTBHOBqJ+NbCIri/sgx82HFrmDOJBaviEJVsc6UkpV46SK7Xl0r6N0jUrPpIvzXD/D/B8n67pXptbNeT5X4/5E60IpeWKAArpWcaxIFCKXFHHKixWIihEml/lQiiwsTGkVb8N4iLC5Ul0nI4AI6HrVWKBSABylIV8RVGoxrLHw5eZo0ueWCfix8jobF824ZTqPCnl3bYUEqIBO1YLDcQetgUHMqYir3I46tDpWcx2gV5nPo/ClUj2el18dRC49y+DoJOopDj3Q1CSleeCY5UzcPZF5QSfSs8YWzY50jBRrRxRgUOdexs+fCYo9KVFCKdisTR0ca0IosLCA0oCjoRRYWFHhR0YFCixWEN6EUdHFOwsKKEa0qKEUWKworBe0d1T+INWqUylhM6bgnU6+UVvo0rGYrbfasau3AAUpcGY77QP0rhfEOZw0m1eb/yel+FMKya7c/6U3+hn+HsLLt+jMwC0TmOUx+ddXwK1YtkJUGVA7Akaa8hNVPDGCqKi6uShO5PXcCtjhzIXdoJSezAmFda8DI+owXJd2TWVtJy5R0/jUtMxCo9KaQcxGUQNqfyqV7sTzqk3dkPNEk+FPqBywZikstRClHUcqkOJHZzy56VYo8GeclfAwJAjSmHEBY6AU4pQTziktyTEzSoklXJDcsgYXzG3KKau20qScwmeVXISkJiDNVl4mVkEHTWm40ThLc6M/d4XaqZWlbIJVJJiuc+0Dg1q6wy4W00lSyCRI2rrLpjcVWXzSVpUkp3qI5RPKPCPa2PtFw564KW+zuUoWVRAMZT5HWvSECuLe0XCf2P7QW79hkKb7VDykhIM+h0rtLagtCVgEZgCPUV7j4Zy3inH0a/3+x8t+NMWzPjn6pr8v8A0Gx0oUcUqK9NZ4qxMUNqVFAa0WFhRQijA8KOKNwhKRrRqGqf7if9Ipu5u7WzKFXbobCj3QUk5oidqr2+IMMcuVdtfMpUtYbaQ1arQjZMcjrJiTWPJq8cMqi2dLBoM2XTyyRi/KuHz3LRMpUCNCNRVq1evhtDrZlKRCk8xVcUEGI23pSVOJ91RT5VLPijl7oq0uqlp26ZavYyW1pBClCNajX2Lpcy5Z9Kr1JKjKjNF2ZP4azrQ400zY+s5mmn5kQDwoRUosTsoUgsL5CtayoxPDNeQxFCKdLagYKSKSUnpU1JMrcWhEUcGl5TQgimpIVMRQilR4UIosQUTQilQaAmnYgooRyo4NHFFgJAo4owKkWNncXt0i2tkZ3Fn0A5knkBUZZFFXJ8EoQlOSjFW2HhVg/iN4m2YAH4lrI0QnmT/DnWewaxW9dvOEBTechKo1VJP8q7BYYdb4RhLrTJClBsrdcI1WqOfh0HKsPhdoUoaBSEpbCcpCY7xGprxXWta9Q0l91H0j4a6ctKpN/edX+xb2Vs2lhuBpEEdaeYQA6IAkHYnlTTCwW0oJBUkSPATUxhBHZrASsneDXnZHssceSS1OfUQN6nNgBObQaVCSdUx11qXOVOpgVCJomh9t0DUq3pReSUkFW42qMjKoZkmRypSxpO88jVm5lWxWJegqBmkpVpoYPI0hckmRSFkyYJmkmWqPBJCy2JUqTUS5cUSZilBSwmFgKHWmbojxE0NkowpkF9zvQajOEqTz2pdwsQYE02k92eUaedVk5Lg4/7Zrf/AKnbuJEK7MTHMAnSt/ZpJtWTB/q0777Desx7T7YXOJWiefdkf4v51twwAMsbaRXr/ht7Y5H9P1PmfxtHfPFFe/6EXIaAR4GpyWREc6AZOoFel8ZHiPssiGGzvR9melTOxnSlJZAkxSeYa0rZB7M9KYZxThtm5cbxPH7O07I5VN5pcJ6AAGPEmrcNHlpWM4/wtoYrZ3wwhm+7RpSFpU8WhmBBBUUiToY9Kxa7VThhcoOjrdI6bDNqVDIr9jR3HEns1cYCLhVndqQe6X3FqI6kdyAT5U6rGPY24tLxOGtPApUlSLZwFtQ1lJy9a58tkBqBwtw60OpduFH45qqMRs3VtDs8Nw5gzu2twz6KJryryuctzfP1PfR0E8cdsYUvSjrV/jfATyVLw3im0S5JIZeKkg+AURofOmrZTNyyl+2ebeaV7q21SD61xW3tXX8RYslMICnnkN90/vKA/Wu+N2bVugW9u0220juoShIAA8AK9B07U5HFqTtI8f1np2GEouEab/Ig9lHU0QbPjViGZNDsPCun46OE9GyqLesCaGRUaGpZSDIIosgnc1SshveAjELPWKBSY1GlScszrrQykcqPEE8JELZOoSPhSC2RsmppQDyIoZfGpLLRXLTpkDszGqdaGTQgpqaQqhl1g1PxSp6ZEIp30pOTwqdl30osh5ARUllK3pyFk5RRZDOxqaUneBRFJiMlSWUrenIzLKnXAhI1PWf0FajAlJwfDbh64YeUpSgZbbPu6CJIHMzVNYLVb3IeQIUhKiO8Ry8NaVxFir6FsWNuGl3V0vK2lUkADdSpMkD864fWdbPGtv8AT+p6z4Z6TDUStfe5+iRf41iiRhN4UWzsBtUqUtAj0mTvtWZtX8rbRCFlak7nkNxNW1tarXZZb1bdyPdWoIy/LWq/FbM2Fwh1oqU2tOVJnbbSvI5dTLL3R9CxdOjpr2uyda9mtcEAqA5idDFWrZCEAmIG8VVYUQ40VKSBOh8xU5ThAOkgdTWdyNUI8DqHQhWdau6DOtOuYlbiAXEjkJqkxHO9Kc6gmeWlNYfYW6XCpb0rjQEzFLcTaL1GKW6UkKcSmDB6TUu2vbZ9JDbyFxuJ1rGYxhdusEovltL30VpWIvbvGMJxEFnFg6gGQSQQROximp0Jws7YSlfSkdkqMw10rH8PcTOXrKEuJOf95JkH1rSN3KzKgdI51K0yaxyrgl5TliKadTKTzBqGjFhPeWAfHnVfiPFmFWpCFPNqX0zUcA049yS80JJqGtWQEKI9KgjiixuFBKYAOsztT6rlp5ByEFUT4Go0JzVGZ4itBc8R4eSSc7iNB4KmtcIJJjx0rPKR23Fdg3/4krcV8CBWnShIr13RYqOBv1Z85+J5OWrSXkv1Ggnwowk8wDT4QnpSghM866zmjzyxMYCT0owg8qkBApQSBzpPISWIjhuqzibDru9s2k2jSHXEOTlUvJoQefwq8CRG80caVTlSyRcJdmatNknpsiy43yjit/jN3bvu2y7HsH2lFJzrJKFDwjWq1WKvFoIdaC1c1Zok+UV0b2i8JPYy7bvYPYBy+WtSrhwKyykJAGYkx5c6wmG8N3VrxfhmGY1ZONpeuEBaFnRaCYMEHUeVcSWljDJsR63H1XPkxeI2WvAXDmJYhjFhji7cN4e0/wBpmUrVeWfdG5ExrXXAkUm0tmLW1atrdtLTLSAhtCdkpGwp4JFdbDjWKNI81qdRLUT3SEBKelHCRrlFKyidqOKsszld2QjaklkdN6kJWk91cJUORNLyjlVPitG96eLIJY8aT2ShtrU8pprOhXujMamszKpaVEXs1J1osiv3anpZUtWXJE9aN+zcbBUo9xI1gVL7QiD0cvIrsu+lDL4U/HehQy670otcxViyIoenZFIGmlFlHSpRbPQGkFo9KmpoqlhfoMFP1NFkini34a0nsyB7xqamVPG15EO+ddtbdDjDrjai+2glCspIJMiemlV1kFO8Yv3D61uKRYIDJUZMqXrV6WUuIyOISsBaFCbcva97ZI5+P8aYs7ZtviQOqQoSzlhTXZkBKifd5b15nrjuSf8AvY978HtQTT9H/wDS5ddbtsNKbp23YbTqpTystUnEuIW+I8O2l3hz6Lhpx5IQ4kwDqUk+c1S4y89xLjzOFqUoWpXLi/7POrvi1i3sbCyYtWeyaS9lYQgQEgJOvw/OvP8AlZ67LFJc9ywwoLTaIQ4e9r5mpy0S0SmMw2kxVfgrinbFpZiVJk1cMgAARJ51B8laVIxnEd3fBCvsTKnHYgdoQlA8ZGp+FZnD+EMRxouXGNY9cPnIoIYbUpppBIgFMHWD13rq9xaNqE5Uyd9JMVWqQm3zdk0keBGUU43F2xtKSpHnpHs2x39votXLN5z+im0Ef1BcJP8ASC5m94AzPgBFbXivgHD8PxVlOCPNpztd4hfuL0E+IUdxy3rX4h9rUe0LTaNdkz86XYYZiT7nahkJn/uHQAc461pnqFkVUZ8OjWGW7cyp9lVtc29o21esdm8CSpG+XUiD46V0h9pCGSAjRQ6VR4fZC3u1uZ1LJOs1oHiSxBECNKpSNMrTRxL2qY89YYijD7FJU6hHaKXsE+H11FcutOLbV7GGrPFbK9eccWpCVW/3iiUiVQkgEwBJiurca2qFrv3HglPaPApWtExG3lWEZ9n9pimIfaU34ZKVF5PaMdplUdykgyAekVZijjk/nZn1Ly1/xq2a/hFzhbEGkXeF412yljMGVGD/AJTVstxyzvmlpfUUOEAjWRNUGPcGNM4fYqwdxdt+z2ghACdXdZJJ011J0q64RuHry3aRf9mm6bOVYVoSQdx5+FVzSjLh8BGMpQ+ZUzT4c80zxG+7cOgBFulIkEmTHStW0lC2g4lQUgxCgdNZj8jWPxFCmzcuslKXnBlSsjNEJ00q44DuXLvhJpT5Sp2AHAdiSFdOVdrQ9QljxvGl25/ued6v0WM3HUNvl0/yf7F0UpDhQfeCc0dRE6ddx8aS00649CIcCyOzCddjBB9akuoAuCoBIDbJSkZdQITzoJfNoplSUdoQFqg6TK/Cr/4lm9jlfwrD7kZxYaxdGErCjduJzJSBKY157cjTLN9aO2txcodPY2xAeWUkBBJj6iqi+xtTXtKs7lTModtmBkCvdKytEzHKdqo8PxVbfCfEttlJfCi6Fz3cqH8kEde9Vq12X0RB9Mw+5vGFoeZbebOZtxOZCo94TEj1pYFVnDN+3d4XYNpQsLZZcaUVRBKFiY8O+KtwBW7DmeSG5nN1GnjintRKwlIU44D+7y86z/HVs0cSwR3swXG8QbCVcxJ1Hka0mEAdq5/dFUXHH/rsHEg/9RZ09a5+Z/zSf0Olp1/KtezJgnmKP9aXGlGE866tnH2DceFCPCnstAJo3D2FP9jKtVOmetS0oKURJNKEUc6VlcmzpqKXYbdSsoOQDN41DRavJ/CsEHkasQddaANCm0gcE3ZHbuH23EEW7gjmKdevXiCCwuCNdKcnXagDS49B0/Up3sylEIacT6VJsiskNKToB7w2qfuetDQbCrPF4qirwfmuxvsgTRFkxvTpPM0DvvSU2SeOIwWt5E0hTQqQfCi51NZGiuWGLIjoCG+92YSVpBz3BZGyuY1Pl68qjNhv7alxCmFJQYV2LqlgAjWSrWrB5LhyBoPE9oJ7JlLh2V+9oPOmrhx5LsKW6pSIOV3KCAQCRppNczXwea0u52uj5o6TJFy7cr8zPs4c9geLm/WtDtoonKBOcDnPKpHtBuQ8MNLakhCx2gHMynT9a07S2rltJUhLqCNAR8vCsHxzeLHEKGwhKU27WXf3cxA09K89JVwz2OSe6mX/AA4oJsmEyCQI02rQ2511HjWR4VuEvWaFA7E8/GtRbqGm9VoF2LJCUlHdJplxlAOoCp3Bpy2UAmSYFNXCwVVekmiuN3QxkQhcpbQI8KW7mUNDp4VXYhibVqkgqlXQVHwe/cvlPKUrIEkDJ0qPsi/a+5PU3yAOpkmamOp+4CiYIG1JsEdoTACiKXcJORYVMAVKMXRGcuUjDXdqy7cOIeQFtqOoImRWec4Rfw+4+0YbclLJMpbImPQ/npWsxB9FqC8vVEwT0p3Drpm6bBQpMRoN5qG0nVlThzeIOoSi5t7dSkj3w6pPxGsfGrFGEW7ag9lhzrM/HkfOrhu3CUzGUmo12cgKZ86i40KXYz+KHsmLh/KFBBVCfHLt8YpODqds+Gn2LB+8W+y6ylz7GhK3BKHJBzaASDr5VKxBTarJKFCc7+ZWm8RVHYNoOA4sm6TahKrxkf0tDhQe4/yb1J+VbtHG7kcrq2Xbhhj9Xf5f+mluv2gvE74LXi4Z/Z0Aqu2W0BXZN7AapXJOp0BnlVPjrLow7DB/SVuJD0BWPBpRBdOpUBC/02qwdFmnF8RWhFp2gw77wpsHFqKezaA1Oih/Z3IgcqvsB4dtsZwe0feeLPY9ohCRYNt/jJkJWklPpvvWxHAbpcnPr5tQ424abR2xy29jOW7C5+8UdSR9551Ew+2xEYfxVNtiMO26g1KO6pRuknuab+ddjtuDcGZxy0xn79d3aNpbZJUkJASCBoAP3jV88y24AFyQNu8asvgqczlfs6+0Jwpg3CLsLm5J7drIr+sRyGnKtYh1KlEHQitLdWzdy32bqllGmgWRsZFUr1haIuVtpChCoHfM1s0+pjGO1mLUaeWSW5D2DkFxyD+EfnVFxqf+qYKnTXEGv1qZwTdLvWX7hbYRCltQDM5HFJn5VE41I/aeC7j/AKg1y86pyO9Qn9C7FHbgcfqWaRpRpBporWOY8opTYcPeJVA5RXTs5ewdAo8s8tKNtRIJUmKWk6TFRbJKJUgyaV5zUvRbZCXihY/ElAMfGoTib1uct8pzWQFJSTVMZXwbJLaL16H4UBmPI6eFRTcYmjQuLy+CQKdt7t1EBYVHlU3CSVkFkTfJIShZ/Ao+lJgjQ6edOpvUAkKdUdNo0oxiFsB4+NV/N6Fny+oyD40CfGg7eW6+QGtO296loShLXdMyU6q9ak91diKcb7jRkASkxRGpVziNs83DluoIiZCoIqCezzDsbgpE7LTy9KcLfdUKbSfDsXr4UJ60ToKGwoLSo9KYS+SIIE7edTjG1wQlNRdMVclqWw6bcAr0DxVr3Ttl3PnTiUjsAWsmUAR2VkVCMo5q1+vCksuPqcTk7ZMGSWnEp5Hcq5eXOlr91RcUFHTV2+73uj936+NY8vGRo14+caZm3cXXhWPuJIQWHHiHRm13jMRsiI2rM8WPouL28u1FsIW+AwZjMgAE7fW9T+JVL/biwC4Mr5CO8CIn8PX1rFY8479ocW4ohDQUUgnSNp9SflXM6hiioKaO50zUTk3ib4RsuBnXJtbdBhgpUtR1k676+JrbJf1GQlSRIMVzqxfbtLH7SHICYACRuU6xHidqusFxN9DVslS8yyhefWYVIP8AGuOuD0CZtFXvYsZ1GABuaytzxW1c3S7W0eCsmilzoDNUXtdxu5tOHGmbdxTTt0tKAUbgE6gHkeVZQ4fc2GH26bY9msIK3YVIAjTzNT3pDjZ09GJ4XbNhxxz7Q+TBJG3pWR4t4lvLRt67wZxu3eLeoWMyCJ0OnIH86zjbGIuQ4UKcRlmAvUkDnPxqLiNnirjLy323EIgpSSRlUmI16iB8aPEVFy4Nl7L/AGkXb9wu04kWyzcqV906lJQhwdIOk/nXRFcQWalLHboVmB1zCK8y4bYXjaHA4wotJ1ITyTzA8d6ddbuWsGWFrVLncCASCkEbz4/oaccpBpX2Ouu8RYTjGJ3eD2942rskFK1DYqnVIOxI51nLLE7jh3iL9n3Tv3L3et3PwqH6EVzTA3XcO9xSgpIIBTseX0an8Q4y5fYb9mdWpS2gHELjvNrA94Hx5im5Jj3OPJ6NsMSTdWgXmkwNRTF09mJka1yz2RcTPYphSm3SUvMqyL5jzrdO3ilupGYdTQ3ZCU1Q1c3C/wBnpuFFIbQpfZhxWQKJV16QKfTdv3eBXvZquGSm5bSV2t+2hQAbc/ErQDTbfnyqsfunXba2aUopShEpyvNpJ1XyV5fUGnghTvDd2O6oi7RHbWSbsf1TmyEee5rr6fF4eG35nmeoalZ86S7R4/cuMQUv7figUt4hNhoFYuEp91r8I1Qf7fmedabg3E7PD+F7UXCkoKu0UAm5VciAsg/eRJ39NqzTiH/2tixAdUDaBKQjCU6kdkICz7537p0+FXmCLdb4ftO1uXrdeRwkPYelLn9ZocgEJ8ue9NGOStGgVxFYJcyDtFKzlMBtW8T06VGvOKbZhtCxa3awpSUjKwTuFHr/AGaj/aVAg/tG8IzK0RZgbDaYqNi126htsi8xwd5GrVuDm7qt+g6+IFOyvah5zjW0QYXZXo2/9so7+tRbziMpue1+yLLa1pKZCgdUg7QetVz+IXCVH/qXEqRAOlokimMUWXLkZnbgkujvKQCpXdTuADB/WpIdIvfZizk4bLxWohy7uoBG33y6Z44QPtuEETP7RaGnnTnsvXm4dLalTFxcFI6AvLprjFxleIYahtxJdZxK2CwDqgqMifMa1K2syshS2MsmEhDgDiVlPhrUgXCkmWreTGpUYA8qlAoToVCkrU0ZGhFbnk3d0Yli29mQ/tDrtwM6GwDp5VPQ1bKGZS1IG2+9NMtIW5IgAbVMShGUAx6Gq8mRLhcE4Y/N8mRU4ZBzrA5zS0iR76vhtWJt+Nru6tvtNtwjiTzUgFbbmZIJEjXLE7aVp+FMat8cYeDTNyy/bFIfadbKS2ozp47GtDyR8itYpruWSUye8s/Gn2rdtXvOKB8KNvsu0yrKt9ABvThQkr+7lI6DUD1quUyyMPMUiwZVqLhQA3BApC8PZ7SStJPWKpcTxxFjfuWwZbUpuAVF0iZAO0eNU2P8W3VvhFxcW6GGnGgFJVmUuRIGx051NY8tWQeTFdGvOGZnDDojpFNPW6WRlJznxFcnuuPsVxC07FYZDTIC1KblCpGhJUIMGdvKit+LHLG/Qp1xx4NkFTarpUKlMwQZ60RlLzY3jXkjqqpCRI06UyrL2kJSE84BrK2ftGwYIAfwm8Uvn2d8kAjyia2OD8QcKu8PMYxcliwZccIcF04HHEAqKRJEkAlJjyNN51DyIPBKQ0EuuEFJzQPhSlNxoQCd9TFFiCsLu1O2jeKFhaHigm2uAl0FJnLzOwkimnr3DrZKGHcTzOQAC8rvK5STA+NNZrfoJ4aXqKytC4SXQwSSYDjanI7p2A/WpqArsT2faQI/qrEAe6Ousf7cqg2ly0+vPa3HagHvFi7Q2NtMxO/hUpxwFCs4t9P/AC35J9wcx9c6y5neRmrDxjRzviRf/Xb8gAqTcrn7g9Tv/Ks3jzfY4vYKezJt3GkrQrRUnLqBGm5/jtV7xEucaxAZk6XDn/uCAPe26fRocYYK7iOA2b9rpc2zSVJBPvJjUac451h6i6xxR1ulxvJJ+hCwMlGDlCWu0X2jjsRIQ2ok7+g361ettoY+8YW4oNrUk92AoqhP+WCfTWqPhu/ItncPbUtaggqSoJjNoIBPJMmY8PSiuMSfStxF4+AqHStYOqVd0J08Qa47hSO9DJZJ4ssWcXw9Ld052f2fKpH96SAfI/pUyz4PvMV4bQbXEVWd0YyqQc6QsCASDvWfxXEl3ITh6UpAcOVcj3VJkCfCK6nwclSeHrVS3w6tScy1DbN4eFVxS3GmPJybBsWx7AMRawbjhWH2F1cXzVpZ3ibdamXwqRmUoGEEQN43ro9tgd7iDOJO2d9g9+3aOFhSbdJIUoJBKZBIB1HWrfG8Js8ZtizdMNvNqgqCkztsfOqfDsAewZCbTDnLq3sxcfaF/ZX+zdUvcZp7qxMSDuBFb4xjNcIJY8iTcJfgKv8AgrFLVLX/AEmyeU53FNtvRl7usgxp41l8d4NvrZy8QrA3mzbtJLoaeSsESSADOpnkK6W9xRdKvrZ5xVs02kK7VD1u4kqJGkKTmAjeIM1k+MOK+JLm4cVglrZ5EuIVlW2pRcSkElJJgAE6SBIApPEn5FEcuqunD+xx/iB7hvBLsYTjV4nDLtaQpDdymFZSY7seX51TXFkwXipt4FqYGaUiOR1G1bXCuBHMa4pc4u4wdavcWdWDkQIaZQn3UIB2A+ZM1ZYpw8i+xo2bDaY0kRAygSfTb4VnzYoxSo0R31c+5Xey2ztLTC7y/Kghp10hBI/CkE7cqt8Tx/D7da8iytQBAI5ED51A4xYZskN4XYOttEk5gDAJJEk8gKq+D8KVjGP4dYtJKi7egLhU5Wxqo/5QTVcE20kUZZqKcmbB1DqWmhkcePZpJKGm1AzmP49eY8PnU+1Sn/l66DyVNIVeIkm4Fh/2VfiSe9rpH8KPjZnNxRfKDCVI7YgE2XabZ4AIP+0+NNWaHE8MPi3beSr7agn7NhPbH+oP4HDp/e9K9DNVjSPIKW6bZd4hrieNNuN2OX7KQM2IuBZ7zQ7yR7g8Rrt1q94ZeDfDNkWrhxpJQsgWIU8g/enUKXrP86pb835xDHAj9r5QwA1ksGgAc7f9Wo6rO+h036CrzAxcK4fswtOM58isyU5UL/rT7wToDHTlWdFr7Exx15baUhzGlgleqUgfr8KYxa3fWlEI4h1cT/UvR+BW+u3Xxin/ALO6ptJ+zYyo9/Q3EfXhTWJ2bjjbaf2Xiy/vQZbvMp9w6nw5R1qRApbhq4jRjjIdwe66P471DxQrGIIGW4ntQD2jgznup96Vb9fGrF/DnVNk/sTiKQkCE4jqahXzSjiiUlh9OV6IcdJIgAQozqeVSQjQey5Cf+V0OZO+X3wT4dsvSmONG0NXuHvpZKFOYjbFxY/FlUAJ9NKk+y0zwqgdLh75urNI44SHl4awVKQV37AzAaiVjUeNN8ZeRLmLLtxxhRCyATTK3G1EwkTTV3ghYXdpavroruQlQcKQS0pIyykRHoRSV2bvbLUHCEH3Udnt6zrWyDi/MySUh5LsaSY6ATVdaYi2pltDdhi6B2SVBRsCjQlWmqtDpqPEdaW6VMO9ktWYqToMp1mREc6rbbh7DDhNm7+y0Jd7JKDKVoIGpjLmMQSdJMTvVWpqNMs09ytEvhbgpGCcPXOEN4gp1D9yl/OG4ykJSmIKjuUz61meJOB7O3vbl1viO7ZurtXaLyKSkojwChMjmelQmPaEHEhDXEDjGpMOMJOp66GmBc3Nxiq8WtsQsrm+Wn+sQE5zoRsTGxI261GOGXeybnT7Go9mWCFLWJWtzi13eJZfbKHVqBMKQTG5japNzimD2eLOYc/xI0xdIdCDbLUnMSToPd3MisfhmI4vgRuEWCEWCbhztHS20kBa4iSNh6RVZeNOXWJftK8CXbwOh0vKKc+YRCttxGg8BVqjNcWVursvsedzYzckLCTniO1A2AHSs/xQ4Bw/dy4D3U/90/vDwqqc4kxJ27dUtyVlcElmJ8dDVY/xDf4k0/YPIRkUNVNJVm0IO0xyre9Tj2Ujnx0eXfufqQbMoU3cHNKg3oJKvXwpzEVxeO9/aP8AuJH4RyIonmkMNKUlb+ugDqQJ8j1pOIrJurgZ9p/Gnp4isqlaN+2mdFw/2UYjd2Vtd/tuzQl5pDoSWCogKAME+tZjiG6u8NZv+GFIQ+LBxLSnkqyZwh5awQnf/uEb+NegMDAGB4drtaND/wCCa86+0MZeM8chMld6tQJSqYzanp4VjWSUu7NKgkzWezZ++f48sbl+2cQm4u7u8UsuJM9q1CZjWQAR61r/AGjknGmAVKITa+f41VjfZsu1t+KLG4uHWWGmWFqW4tgtBP3Z1KlGPjvVZ7Xfazwwzi4VhD/7TW0x2ZWjut5sx2O6txsPWq7bkWOKRs+GiUqdByjM5zsy+dE8o93139KRjvtD4UwQONXeNqW+mAWLSxQtQOQbgbeRI6cq83Y17QuIMTbdacvH7a2Xqbe3WWkE7d4g97Tqayr2KuqbgKOTNoE6AHrHOpp0QaTOv4lx7+1uL2cNwmxK3sTvwhoOpTmSlajJIE7JM78jyrtLrKE9xAOVLeUHqNhXD/8Ahe4eTd3+KcY3icwtT9issw2WpMur8wkpTP8AaNd5dTmCspggaT0rm67M5yUfQ7/TNPsxufqcz4nYuMJeU5asoFs4QgQQOzCj7vUiefU1jr16EOAuulS3gHSTClgATB2iYiuy4tbN3LawpAIBiCN647xlw9d2eIJftkk4aFJLoB1bA0B8RvWW7RolHYy1wl1taBcPNlchKcilGJGoGg1JB8tBXZeFbtL+CNNFvs3GwTlBFcJ4avHL66CGSCvNBIQSBGwT0rq2E3jdhatIKFNvhSj31QBGwjeq26ZowOzQ394uzbXcIJGVOtVo4utgkKeUIGhMxrG0VMw25bvrQl4IJOhGWKz+L8P4eZKGiUKV3gBUvEkuUbE2i+TxJZqYC1ggTCkqA7pIkCfKm38StbhqGcil+IgRv+VZN2wufsq0rELmYy8iY06mm7XDLi3eSU3SlhaVJB5ARrPoKn9onQeI15GiYUylDj2buxqa561xL2PEN08rOkZ1JJG4EafECav+KMVs8Nwo4cy6ZQhIWQZJHTzNcoxW9cur9KAUIZScy1DQrHeTqfSqm3IzZMlI0CsVOJXTzqWu0UqUuLUmI56DlXU/YZgYtr0YzcIHbXDSgyI91Bkkjz09BXnW54itsJSlSiorhMNbFQUTmJ16c6ruEvaZxbwtiJucGxt/xYeAcZI/uq26aQda36XA18zOHr9TuWyL+p6S4xLZ4pxFS221f0g6qQ7rqrmkx9a8qbtVWf8Ayy4X1Yeho3yQe3un2kg9gNjuTqNNo8a5ThntktsYxNx3HbEWbjzhWt63uHA2NT+DUjc9dq6tgF4nEOE3X8LvLq4Qb0feWDiLo6MJ0JcHd/OdeddKb+U5EF8xZYn9j/afFBWrBJ7IBwLefKgC62PvANEjT8Ou3jWp4Tt23OFrBDVsHGw2YNm6pDX9Yo6Zu98aqbs3ov8AHCP2rkOjaUhkJB7RGqCdSd/e8fCrXCGlqwKw7a1VcOBuFKurhKV/1it8uh66VnstZPXbZWtMLeVKVe/eePlz+VQsXsUuoQP2OhyHgdb/ACxCDr+ketLXbt9kAMOw8/dn3rvmVbeXjUbGbRp23SFYdgzmV+U57zKJy7zO/hTIkN7CwWQRw7mMapGKER6896ZfbCcWSkW2UpdiO0KspECCY186XcWKFWyQMIwNZRJAOIRB05z9RUO4IGOEKbtkw9H7wT3tpgz51JCZoPZsi4d4StvszwZKb5anDE50B1RUn1FQfbTnPCVx2bhbUIOaYiKt/ZZP/JluddXnvX7xVVvtkE8IXm/uE7eFOX/YRh2MF7c332rnhns3nWz+xWycrhEmfCuft4pibfuYlep8rhf8a3nt4P8ATuHE9MEa/OubdZq+HYj5HbvZ0p57g+0uLhx66dfU8ordUXDAWUganXQbTGtVzLakXCmywpIQIy/Z74ZdtISS2nyQSByJFXHs1S2fZ7h2ZvMotvxoD/3V6QdD66dapU2y/tK4tHsoGkWF5A22yr7P0R3emlSzP5YlWFVObOrX2EYTeAi8wyyfzb9owhU+sVQ3/s74RuwSMKFqo7LtnVII9JI+Va8iiKR5UyKbOdXHs4et0zgvE19b/wD87lIdQfhH5VR4jw1xbZGX8Hs8WaSZ7SycyOEdcun5GuwZfD4UkpBNCbQ79TzheWVqxcFt1y6w56Z7K/aUn4KT/wD5qnTg99brcfcYbeYyz2ra+0b1PVEx6xXqG6tmLlvsrllp5H7riAofA6VlMU9nfDt06X7Ru4wt8/js3Mg/ynT4RR3JKZwe8KAhIbU3qdcij0O80i/X/SLjvc1fjH6iuoY/7PcbQhXZXNpjCNgHUll8f4hoT5muW8YXVlgtzc210t9m/T71oVIXqf7adPiKkpJIb+ZnpywdQ1gdotxxKENWrZUpSgAkBA1J5CvKXtN43w0cV4svDHk3ra7hZDra1dmO9qR19NKovaJ7UOI+LWkYe9cfZ8ObQlKLS3JCFQNCs7rOnP4VztxYKYKlLCjsDAPr5VjjGjQy5xnibEcVV2d1dulMQlpJOUaREfxqjcuil1CzlWo9TIBMVHdUCpREQrSR9fUUymVPDMNjr0mpgWt84VLgEwBAHQ76U2ypEZiSD5aUH8vdUZIMQZ8KQ04iTmSI11nnQB6n/wCGtLI9kdoQRnViF0XNPxZ/4RXR1p0zESdq41/wpYs29gGM4E4fvra8TdtpndLiQkkeSkfOuzXCg2rIRMCuLqFWRnqtHJSwRorLpISgpK9VazymqHEmULBBSCSO8mNDV5dDtEShWnQbiq2Dn7++utVpkskbOfXGDjAsXt72wU4i2U5BZgAJWSI1jQT18q3bVuyW1OrzBKyEoWmc61GMx15DamLxlKitAVooaVTi+f4dbdOR25CQVMrMEJIE6jqTzqzapLkzbnjlZ0CzQ23bHsFlSkKMgq18POrRK23EHupmJCiNq5dhfE7LgFzmUELSlCiZEidQR1JgcqTf8asWjTaUuhLiUEBBM9QZ9YNU9jfHPGjpa8uRaHUJMmU86ymJ9igB1t7IhKiDI5HQE+tQ8P4xt3EJD1z953U+Oon9ap8extgNBovIl8hIQnUlI97w3gedDtkpZY0UHGS3XnAlSFBY0WgI+udYDjPDrvhrhMXmILy3V84lu3t5lQjvFSvIRp1NdlwPDnXrlWJXSQEqSkstkzBInWekmvPvtr4mHEPGrqLZ3tLHDwbdgjZRB76/UiB4AVo02PdM5usybMTk+77GPU8t9wuPLU4rTVWpgcqiKeIvTlJEa0+3EyokAHeoDCiq6cUFc9NN67B527LJ15SSFBIBPImrTAMdvMLuEPWjymCSCUklTbn95M6jSqk90SAMwEQdRrpUfPCSEnYfX6UCPU3AntMwXiMYs7jLWD4TiN40JDjbykXKu0STBCjyHuiDPUV2HAG7ZXDmFFtvCVI7AZJC20xnWe6lRkDz5zXgJq4UgDKonlBrsfsv9uuM4Ci3w3HAjFsObhKVPjM+ynX3Vk6gTsr0Iqtw9CVnqXI0GQCjAx92NCskQVee361GxoW32dAWOGtX1f8AqCYmOWvvVW8LcZYHxNh32rCMawh+EoC2zbkLa12Uk6j8qn4rfpNu2r9pYMkl5SQXbQqGgGg8aQiC81aqt1HseECnLrmcUE+utRnQg44cqrUQ7+EAx3thJ26VLVfsm2I/afD6iArNNmYMHpTCHQcaeh5ofe/gR/b89ulSQmaX2WJUjgeyJUVZ1vLEjYF1WlQfa5mVwhejKP6tX5VY+y0EcB4bM94OH4urqJ7U0zwpeg/+NX5VH+sSOZe3r/8AaYAOmCs/ma5v1roHGX2rijjjDMLuGlNt26bfDy+y2T3VQQog6AwraY0qt404RYwC0XcNXzz+W67DKtsJ072sg/2avjJLgVOjo/s6T/8Aj3DZiOwfP4f/ACufvd346ddKoU2n9NcWMPUQRor9mOQdvxJdyH/AAnppV/7PYHs9wxWaALd07pH/AHXeatB66ddKyirUi+cdGGoIVJDn7NZOeTvnDoCvMAA8gBFSzPiJVh+9I7z4xRQaVB60RHOpWVCSKBFKjoflWM9ovtH4b4Kt1JvrkXN/EosmCC4f737o8/hStDUWzXqyhJUSAAJJOwrnHG/tg4Q4b7Rhq4Vit4nTsrUgoB6FZ0+E1599pPtd4l4qLtu4+LOwO1nbrIGX+0d1Hbf4VzS4uO0Up1w96CAmfT+dJz9C2OL1Oo8d+27iviMOWdo8jCrNfdLdoohR8Cs94+kVy26u1OKWpxeZZ1ICtPj9b0i6eLoGQQD+Aifr+VMrQFIzyAB0P14c6g3fctSS7BFUAZjmAPvRoN/50yRrMCJ2nnP18KceWEoISTmSJM9Pny+M022nMDmBMn8RI+Z9fiKQxswXArwBI9R/L51GkZzKTCToI+vD51LeCc0kjbU/r/qqO2nvRoVk7SPrrQA9mU4wDOYDuyBNIlQJBSdJkgbUtBCF9+QhXMD4UlwEqKYgD5n6+hQBsfYtxYnhDj2xxK5WRYPA2174NL/F/hUAryBr2O6EuthaHErSpIKVJMgg7EGvAjZyqjTbXxmu/f8ADt7TEtNMcIcQXPcEIw+5cVokf+JRP/xPpWLV4dy3I63TtUoPw5dmdlfBQcylRHKNqYdKc4CglQgnU+FXFxa9olUEEK2HOq16z78ltKlbE+Fc1HafJAdtmmWQWUbjMQKpcaYS7akEgETpuRWkSlKSW16DXkRoKpb+1HalSVn7xXdBTPpNWRZmnGzmWKYTiXaZLd/7vNmSCPdMHXzqGnhnEbl9Tjr0FYSCdojp02rpl0x2SUr3Hu5II15axVd2T6locMhMkgASKk6ZWoNGWw/hJbYyJv7iIjWCJ5keJ01rT8OcOWttcpKULeWlcpU53ik+E7VZ2bKgRIzq3PhS8ZxCxwHC3cTxF/sWGE51EHfw8SToBzqt9+DRCK7yKD2y8U/8scHOotl5cRv5t7TXVMjvuf4Un4kV5ZOq5kgAwB4Vo/aFxbe8XcQvYlc5mmkjsrZj/wALczH94nUn+FZxIIGoJ8q6umw+HHnuzg67U+Nk47IJ9zsmFKI1iBrUTDwSJ6mdqGJrlQaTrT9gO6OW2/6/nWgxExwQx3gJ2npUUToncH6/hUleZTISNPPSPWopkgj8+X1NADiFJGpI1E5en1rT6NUGduv161GCilcjURy+vGpDJXlAOusmU7/WtAywwLGcTwS/bvMNvHbZ9o5kraUUqEfWxrvPAvt9ubtDWG8UKQghRP21m0Qo6wO8iNhG41rz04ChZJGnTwnf5UaFQAqSCk7czSasD3JYcQ2OIYYbqy4qsXmNQHE4ZIG2hGXfXaiCycYuFB1xQ7f8CCB7/lzryTwHx3j/AAlfdvhV4u2zJyuJ95Kx0KTIP5jwr0LwF7QcJ4pfWX3fseIuLz9gojKs5p7io1323qNUI7H7O2uy4HwdEf8Atgr4kn9ar/aYgr4buRr7ito6VecLtJZ4awxnbJaND/4Cqnj9pLmBXA3OU6elVp/MM4/gpbGJvqJaSPtDOpcv0R3E80gn/Nr00ionGrqF4fCXEqJuZgXd05I72uV5IHrM/OrDCSyzeNuIxVk9s404U/ab9opISARKUmTpvr0GgFQONXVPYehsXRfIuSrILu6djRWuV1IA85n51dVSFfB0bgIhHs6wtZOXLauqzZwnL967rJkDzIIHOssLHtL511VgmFyoOHA2znk79oD353kAA76VrvZ3g+IX3BHD7ttiAtmlNrbWjs5UfvHTIMHL4H5Ulz2a3wfXdG4wY9qpXv2Dnab/AIjn1PjAnwqeSSaSK8apuzpXKo+KX9lheHvYhiN01a2jCczrzqsqUjxNVXHXFOEcG8Ov45jDiksNwlDaNVvLOyEjr+Q1ryD7UPabj/HOIxcvBjC21ksWbeiE+Kv3leJ9IoshGFm+9qHt6xPFFv4ZwYF4fZapVeqT984NRIH4B8/KuHXt6t59xx15bz61ypSlSpSusnekvELSlC4yyVSg6k6fWtQrlpTbuVyZ0JzdNPjSLkkuwlTy1uw4cqJO2/x9KQlJUYy5CdOok/RpKdElOaDEbwNvrrTziXCjIUE5NdOU5qQxpwk93XNyMmevnz9KSs/dzAKUidefMbelGpSc8gqCZOWeZHP5UFxGRSTB0Mb7jX1igCO6QDl3IBknp1+VBsrPdBBUdMogT/Lb5VFcXlIChpE6xIkVKtylTcqJ26ekEeX5CmA4+gqbzQVHprKdNz9bmoaUHtlFZIA3OoNTMgUFbdI0Bn/f/TUdKRJhB10HPTbr4ikAbqdE5VZuUqABj18z86S2e2CQAcwTy1CucU+pK0iB3FbR5+Q31pgyFZk6DdJgzuYoAJSZROpPP6+vnSm3OzMJTmAgxOnnTvaB2RAzncnmf0OppvImYgkpMkHr9fn4U2B2D2We2fEMHbbwziFLl/YJHcezS80OQ/tD513/AAHHcIx20TeYbetXCF6nIqSn+8NxXh4KKFAlShOknl9b1NwzF8Rwq4+0WF7cW75Topp1SCPCQay5dLGbtcG/B1CeNVLlHtnEC00jOMsEcuX8qqQpCySXQQOU15rY9q/GrbIRcYmm7y7F5lBPxAB51Jc9rmPQAbaxUrNlP3agd46xWf7JNGv+IY2eg7ksBQzrBOoHKKZcVZtjIX0FwxDYEkDqegrzhee1HiF9alJFu1GxDU8p5k1U4hxpxLepyOYtcJCjCkIcyA8gdPI1JaST7si+oQXZHoXiTjDAuHbdwvXTa3xsw0oFaj+g8TXAvaFxtfcTX5U+rs7VKiWbZCpS3P4j1V41mbh93KkqdKjJIjeec/GogR2izGwHM+NX4tNHG78zJn108q29kIAKidCZ1o5gGPSRS1AISAqYOu0E0FDOpaxEchIArQYiAEKdulHeOtWLaAgATGknf6+hTdiyVLWrnvr9elS1gZCBr49fr9KYEa7WZCdhGppLac2wE9J+utJuSFPkaHWpCR3Uzt5afWopARimI0g/X8alMxAMAz9frTb7eUZtCZ2HL6mn7dMomNIMfU+FAC0gSgp3PLxoEJicp7w0Ap4pgZSE5p1+dNrIzAImR8B9fUUxjauZCTr1NWOHOOgA5loSDqZ2qI2hSlACDmHPbnU0ZUJ7JJBSNwdJNAjuvsp9vV9gKWMI4pU5imGJhCLoavsJAAAP74HTfxNd9xi+w/iDh9L+D3trfN3LedgtPDvgj60rwKHAh2FJBKjAHSurew/jW/wm+PD4fvizcmbNphaEqQ8oiQMySO8J/wBzVbgrtDs9LYOy1Y4bZ293h2Il5lhttxaLoBJUEiY++H5CtHZ3to5YuWig4y24gz21zKgTp+8fka5m9iPEjgKl2PEen799bpjXX8FGrFMeR2WS3xdSu9mDeIMqKYIiZR8I2puUmQ2I6lhosLO2dtg4hxtS80KfKo0HMmeU0vEMNsLxhv8Ao4KJJBbfUnw3Sa5d+2OI5SfsuPEKOurCo8zkrpfCq3HeGMPceBDi0KUsEgkErVvGk+VRfL5Cq7Hkf/iB49c404wdas3FHB8NKmbNIOjqvxux4nbwArmaHChlOXKCZkzz60h9awoOJWJ0gwAPlTailYKlKSpW+munlzqwaVCm1qKQrIdCSdd/rpSnil1KkqUYBhJPKd6ipzZu6Z1M6TpTgcKveGqpg8tNPXlQMbWVFQOubbanAqQpEKSdRAHnO1NvLPYAo947jw60lOYpVrIj3uVAC1LJecCdArNJ/wA1E2lSwpQJISO9zj3qMpkKBUkdATrsreB0olkpZIBI723XfWTQBAv0ALPUHWlYerMMqwTy3+Op9fiKViGUhWXWdPmetR8PUUu6EoPkNfr+FAFgpQUIzECB3iDPn8BPnRNArVKlneVEa/D5/KlKlSitSe1BE68xv/D50hIhChmBUNBoII8/r3hTAdWAoHQyQBOp19fM+nlUdQ6gRuNQI6f/AF+XWnMyRCSSVAz3YHXp/iPxpClqJGmUk8p35Dy1A8qAGykEnKrrudI5bfXwp0KBlLoKsg0UN4/X+dNk5yBJPXQ8tvy+PnSkdnlSlxuVkzGg0HL8h8KAHVNqUkLEuIA72U6jpPz/AM1MEJQQFKmDI6+vqB8aNzVB7NefWCRH5+P6GkJLrcpMLSeZEj66UAKV2YQC2QdxlnXp/CiMKOZAA2kE8pmiK3AkdxkkH92Of8qMujJohG8bmI5flFADawo6EATE/BNJyKWVwB/v/vTrrnaLTlDSBlHrSFLWkDvKGx7ogEHb68qAFFBCSDCZE97TT6imkFOZSUHNHNQ0FOpQpYLnZlSERqeZIpt2GkJghZEd5IMfXOkA04FLWtwqzKnU86dWMjR72gE/XxHxNNty4rOZI8taVdFSglJEj/ef1+VAC8NktqIUE5uZ18dPHnTzmcKOfvSZM9B9CitAkNwCNBMxp9T8qW+R2MpUEwnaOcafr8RTAqnVAr2OhJE8z9RU5hJyyjQa/Lb9KgIUnPCgI68vrSrJlDYa31BHIbc/yNIBDyUgpEkyNCfh+lP2aZkFXdg6keB8PGmnc2UACSDOk1KtUJIzNaLnWdY1Hj8qYCFOEJMazOp19R4+NJQJB5amYO0/zoLVncjUydDpJpxIClJymSqDlFAEhpKUALUSMw7sjU70hJzZilXumD9fH50u8WIS22ju6BI6aUlpGVEJ12P907+vL50AB1tuSVKSI0kfi8KJDxDqFoWoZCDmiIPWm1KQR3lA68teVNIcCSITI2ANID0rwxd4Jj3CWH4ubW1S+7mZeZQCB2rYBVrOgVKSNeZq1LNjcIZZteHrGG8yik3Lqg2FEzqnqU+Nc8/4X77CneNhw5jlu3dWmINKNsl0kpS+BpA27yZHwr1QOD+GCsLOA4eojbM1IHPQbCk37hdeRxtFqUOIaVw1bpjVOW6eB1jluZ0rf2fFV1hOB2NjZ4OH127SW1pyuoCTqVAd3UAwJ571srfBMHt1ZmMIsG1fvJtkT8YqclpCBlShCQOSUgVF8iUl6HzfcKycykmZGuhnTrSVSmUlICSc0dD1pxyUK97MdPA/EfrSdFEd0gk+7HP66VMYSyQo5JM6yOQ+vWja0kLAWCdyoef6f7UghQREGCrafy+P+9AhUnMQkzv/AB5/GgAoUgZNZiJPTQfoajklDpaV+Hcg+Xwp91InOlwwBJ5HYyPnURwwhLhUe7Igbx1oAnNKSWyM2YE6p2nUCaJHdEkkSRMGDJIn86isKBIgQCNuvLQVJzSlRTmCtxl1jc/wpgRcRUskgkkAabwfj51CtVw8N9RyNSLuBJTJSB8voVDQRnEnTxpAXayDOgn01H18xTWciEiDpprodo5eXxompKANM0fhnf09fWjcIkpUkJWTrIIIPl6j4GmAtK+9MrAncTmPX8viaSpC0kKUUAqGad+onfaZPlRKP3UkAgDSEjQfUfA0EqSkSoJIIjkdB/L/AFUANgJBgJBHIDnzjz2FFPeEKnNtrvS85kpIUArdI0n5df8ATSSSAJk6dD0/2+dIBxCgQdwYkZeW2vnt8TSQApEAQJMpB9D8NvWgyY1JCIE7E+U/GllSRBShY28YEc9enzimA2AQJGqTpG8fX5zRKbKcxRBkTpv8/j8aVKTr39Bvvr/LfzqS1942GkFSSdBrppr+sfGgCCENqPeObnEb+X504W29EgE9Qrz5ef5mluwFSYEab8/j6+QpbISlHalGYAdfrz9aACfBQtKApIjnHPmfSoD69SCkJIOkcvDyqXcLUlKpTsQCSef1p5AVXq76wAkkREdBQA/ZpIQXCBEyCRTbwLiwpKgnUT4fX6U4gDsok7dRFEQnMCNth5TQBIYSSIEAQNz9b7etN3qilslJn6+vhT6G1ZA4pUa8x4H9AfUCo2JFQaCCDvrp9eHxoAgtkdoDqBO315VaTKUhZiNztI+p+jVUxo6BoTtJ+vOrpKClsBQURA2G3M8/OhANKKc4Srr1Gv0adaORIUYhW2xHP6+FRSYcM6xzE6VOAJbAJBjUp5D489D8zQAhQ1KhJVmkk66T0+ulONLUpYzp0He7uw+v40XdCQnu5jp0/lyPzpdsVdmtwJJjqOf1+lADWYKWSPenQjcUtwhLZSSZMQOY+pNNstrUqJTtoesUu8cDae7CswkHaATOnxoAjOOd7LzOwFLZRABOnPTciN6ZtkKdJXvl0APLxqWmA0vkOZMen6UDLHhjE7vB8Ys8QtVqFxZPIfa/vJIMfKK+hPD+KW2N4HY4xZqzW94wh9GXooTHpqPSvnJ3W3A4lRkbmN/CvTnsB4tae9nhsLu6UFYdcFptC3MqOzWM41JA3zVCSFVnoW4vrS30euWkHoVCfgKhrx21n7tq4d8Uoyj5kVzl3iYKXFmgLSD3iwwpwH/EcqfnTAvMbugVN22RIP8A3XTHwbED4mq3OMe7LoabJPlRPHzim+07qBoCc0/Kf40RcUFghUkKza7E/rQnUnXRPLkKYcJbdUpJAHIgaH+FXFI9Lh72eNjHMnT8o50UAgKUSMoOk/h11n63pLThhKlH3B7wHnp9aUeQqUAqTvBiAd/r9KAEkd3UCcswNNI30/SobxCiUDnqdYFSlSlMSJIgpHzH1oKiXBUHQFanXUHegBDBWUAEwamtKBQFODMpOsRPjA5DYVATITl93l51LtMq0BUyfwiBvP8AtQA1eIGVSgBtrEDnVcmcwMAddPr6mrO6GZCk6qidSRr9b+tVij3hmOv60AXLCm+wzFQJIgAdOck+R+jSHkpUJKiTBzHT1/M/A0u1SAymcpRuZ+f6D1FEvRROYmPE66/7/KmAlMmQpRAI1AI0/wBtfhS1BSFAKQNgRqYHw8x6UlBUUlQmdifryosqlglRJOxJ2T5/P0IoANKoRBlQju6nQfXzpMSJ1P731O258qUmMgVEToSY3+v9NGJLahuQAeWo+Hl/moAIqGYq90KBTqAdOfw1HpRogAgjWeg+t/8ATRLVIBlSykGfH4eRokqBKgpyQkfvET/OgBSilUKhtMfiAA8Z/wDtRoJSvkAB3piNP4TPrQywBmCSrTu6wdf4x6TSkjMhtIABSrQ6wOhMnlr6EUAOrQXGSkkoWDqRsetMKUQRlTmGvPQfW3nRpKQmUGVHQ5oka6fw86ZWUkRMAmBP16+YoAaeOpUdR1nXp+X5UygFZkpPXSlOSFd4jfYfXnT7DcCJ7xOgG9ABqSlCdJCtx4U2ykFSlGNN6U7OU7keNG0YASVTpNAEloICFTqncn/fxg+hqBiitUSCN5B3+t6nZTlKeYEqg/X0qqzFnApSDmKhrOv19CgBu0A7UHaN9PrpVsVZ2sqpKpkyAY6/mfnVXhiErdg8jzIH1zqzcV3IWkpAGp1iPqfhQAwlI+0GUnXwqYVJAJKYVvqCB1+ETUJoAqJgCSJjlU0GUkxJEEaAkH3v4+poAbzAFXMbkHy+j8KeCiGUshOVROYkdCTUAqCrkhIEERoJ8DU9shagTtO0UADtAyie6CqI5xtUBbin3ACo8pPlv+VKu1ickmAYA206/wC9JZbhMkjU9aAJrQ7NISiSArTT0/WhsDlAOXYxpB50E91BKYGg1J+tdKaQtxScslKVCDvqN6AFqTvJI5xMTXQvYVjllhPEDqb5sKafYKAQmSlQOYEDfqOVc6K06hBSUmDprJjWrThu5+y47aqKtCsT4TpSlFSVMlGTg9y7no274/Sgq+wYeExohTkAjx/EZ9RVJiHF2N3pTmeQgJJ0SiZPiVTVGGynuLTCs8GadSyDJUqPClHFFdkOeWc+ZOzjalAqSFKBATA1g7+NMvAKJIAUQPj9eNBD2XRM+MjbXr5USiUpSonboIgCJj4bT51IgRypTak91QBGk6fWtPpeSpGUd0mYIPMg7/U006ANA5JAknfwqOy8W1BCoTuOvn/vQBPdWClegC/dnYGJEaemlQroEEqKtdt+hjfn+VSQUrCsiiBMGBtqOX6VEuoCSAdAN/H6PKkAT0nIo/i5eNHhjio7NJEpVAnl4+lNpJ+yg9DFN2Ky3eKRJ100/SgCfeTlICRME7z6fCPjVWrUjc+OtW16SpOYggGeXz/MegqoPva6iduf1/KgC7tpDCEgqBid9hHhvsPQ0FpUkyuf3SpQJnlz8j8RSbOVNphUjQhI+X6fOl5kqJyq0HugweX8I+NMBhuQ4TEkQANPDSlqKEgkqkHwif5R/qogUrkQAYAEDn9R86OFBIICTBEzpH1I+dACS5ncnNI1mB8x8z5ilpzKbVBSjXadvqR6UaSAmUEZgJAjUj6j4HrSUAGcwGUHSAInn8p/zCgAAKWQoGEmImdB4j4es0lOVMhIAkQBHPl+QpYQAjNllPMj89PU+lKbAUvKmU7lQOw3/n/lFADWVManX94R3fof6qWGsk91ZgkRz6fy9KElMnMRJ0ABAH8pj0paFZ1kkJAOxWdpEDn0keZFIBpxe4Wo5SBvMkcvjv5xUZZkFKSFEGI5Hy+XzqW62Ak66kmYI36/GB/hqG8suOKgQCdIG3l86YAaSd+Y6bevy+dSUZlBICZA2B5/W1MtpSUkeMkGNeX8R6ipBMEpKyRBJI3+jv60AMuZgNZMd6jZyhRUY097wo3Aqe9Ekak86JHvgEQJjbUUASkQoSHEyYIgEwdh8NR6CqvHAA4kJMwT9fXM1Ygd6SPTQEgjxPMQPOq/FgMyDIMKMxGp6/H86AEYWB2hStQA2JnSPoVYPKBhIKgvZU9efnrPrVfhxSh0lQITvAHL6FTblRAyL0GoB5jrv9amgBDGgUeQMSdqkPkJRlhIUfl9GR5mmLSQExvM03ilylDCuRBgAHc/WvrQALNWcvuFXMIT0jnUtbnZoIzCeehAiCPqaatG12+HIR+IDMZ5k76+tQbh1bz+RAk7DwEnWgB5BDzxMEmdARuTtU1tKQVKUAVbwBoegpFq0hoIEayNdioaUtZCElZckpgx00H1G9AC3H0ZcoQnKBGhjXX51HZJWQCghHLoNajDM89H/wApqxYSpvQAa6ESeU0ABWZKFBKSACQDoOdJJUz2bgJJTCgYNKWoKXoRKSdzy8OtM3ErX3vdHM/OgDttq/8AbLe0uQSrtm0rnnqkU+kabU37Jbm0uuFbNzIku2NpcpUR+/Kss+QKYqQjQDTl1osDgrboA1O+4zbfX6VKSEKQckxzB1+tz86g3CEAFxvQQCJGvWiZeyNlSpIBKT4iIoAeuEFKidp1HjyOvx1qM8ggpImR4R8Pj6VOzLWjvZSdTMRtzjzFRXzGihsnNv4TQAi1WrRIUBI0M8vPlt604+kqSvQab7daiuAtOBPXTQ+FS2SVsrWoCWumm4n9KAIrP/pnJkRsBTOaLts6gGNvrxpS0qaU8hKiEqgxNR1rh5mSSkKHPXekBePypucpAiZKuex/T51UK1VJAiev14VaOFKu6ZkCNucT8IqncOppgXdjkTbiFDNzjT1E+p+NOpMqyhSkk69Y5/ASPSaaswpDLawZBB08jr9eJpTqu7lgA84GkzH5k+lADLoJUokxOp6wef10NJElQ26kdPrWiK86wlCRJjfy6+tO5oSnUqJnfby8tPmaAACCmZUIExOh+tT/AIaWJHvJObaM315fCiSVLRkTrBglRnn/ACHxNJIkhJgDbT1/SflQA637sJVyJRmJ8I/T4mk6pJzJOh9fKlDLKgsSoHWBz1H5zSEOhWVYzJzK2EeH8R8KAFJyzskzMxsddP1+IoJCiRKEqPIE8/8Af/TRIcKm1ZAREEgqkHn08qUtIWFAjQSTqdhv6x86AEvHMnMScp0HONP4a+dQnBsCeWsVKXIEHLGaCAPL9SKiBY7Qgg6HWKQEllQSjp+n1v6U4kqz91STl3iY38fGmlEtkDQmd42P+8fOnQkFvTmOkTz/ACpgIgkyI15dPhSUpKjMGDoAP5UpIAXCvxGKOIJSvvQJHhzoAd0O5CYPL68z6VXYxBSlSMsBcwD1+h8asSckjUa8j6T9dTUHFWz9kU5A0VGh5/RoAiWBh3Q5dN+X1tU97qolURAUfD+Y+dVtnPaDod/r1+QqdcKSMgCdQBrPn/P40IB5mISoSSNZ/L9KhXaO2xO1t/wEyQNdvDrNTG1AJ11KtNuevy3+NQUhIxxhcSlSQUg9CdKAJ18tSlQg7yABsNRTQS3aoIXBdJiBzPh86j31wpt0JSAVBWQTtvTzDCUBT7hLjwgFR5eXwoAfZbcBDj6SFEg5NzNM4hcAultAgTAAMknwpDQevnClDnZpEAk6nepbFu1arSUplwn3zqdZ/gfjQAuwZLTJcdylR1UANvWlPPjslAaGd9JA6/ICortw4saGARmHlpA9NqabzLkSZOpM+VAEkOyJJk6ajl5UXeVmCpVuYBmfDSiSnKConSYMb07bJ009fE/QoA6f7DLgfs7iJjupCLcOJAPUhJ/MVrQkR7prnHsquXGMeubVMH7ZbZDPULSdfhXY7DAL66ZDiFWwB6uKH/1oA//Z" alt="Gavin Dyer, Licensed Insurance Advisor" class="advisor-photo">
+        <span class="advisor-badge">Licensed in Alberta</span>
+      </div>
+      <div>
+        <span class="tag">Your Advisor</span>
+        <h2 class="advisor-name">Gavin Dyer</h2>
+        <p class="advisor-title">Licensed Life &amp; Disability Advisor · Calgary, AB</p>
+        <p class="advisor-bio">I built this service after watching too many Alberta families pay years of premiums for bank coverage that quietly worked against them — declining benefits, no portability, and the bank as the sole beneficiary.</p>
+        <p class="advisor-bio">My approach is simple: show you the numbers across every major carrier, explain what you're actually buying, and let you decide. No pressure. If your current coverage genuinely is the best option, I'll tell you — and explain why.</p>
+        <div class="advisor-stats">
+          <div><span class="stat-num">20+</span><div class="stat-label">Years in financial services</div></div>
+          <div><span class="stat-num">6</span><div class="stat-label">Active carrier contracts</div></div>
+          <div><span class="stat-num">100%</span><div class="stat-label">Independent — never bank-employed</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CARRIERS ── -->
+<section class="section-sm carriers-section">
+  <div class="container">
+    <div class="sh center" style="margin-bottom:32px;">
+      <span class="tag">Carriers</span>
+      <h2>6 Companies Competing<br><em>For Your Business</em></h2>
+      <p class="sub">Banks offer you one option — themselves. We run your profile through all six simultaneously.</p>
+    </div>
+    <div class="carriers-grid">
+      <div class="carrier-chip"><span class="carrier-abbr">CL</span>Canada Life</div>
+      <div class="carrier-chip"><span class="carrier-abbr">RBC</span>RBC Insurance</div>
+      <div class="carrier-chip"><span class="carrier-abbr">IA</span>Industrial Alliance</div>
+      <div class="carrier-chip"><span class="carrier-abbr">EL</span>Empire Life</div>
+      <div class="carrier-chip"><span class="carrier-abbr">DJ</span>Desjardins</div>
+      <div class="carrier-chip"><span class="carrier-abbr">AS</span>Assumption Life</div>
+    </div>
+    <p class="carrier-note">Plus access to additional Canadian carriers for complex situations.</p>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="section" style="background: white;">
+  <div class="container">
+    <div class="sh center">
+      <span class="tag">Common Questions</span>
+      <h2>Things People Ask<br><em>Before Booking</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Is this actually free? What's the catch? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Completely free. Like all insurance advisors, I'm compensated by the carrier if you choose to take a policy — which means there's no charge to you, ever. If you don't switch, I don't earn anything. So my incentive is to be genuinely useful, not to pressure you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Will switching affect my mortgage or my bank relationship? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Zero impact. Your mortgage is completely separate from your insurance. Switching insurance doesn't affect your mortgage terms, your relationship with your bank, or anything else. Your bank never needs to know.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I have a pre-existing health condition? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Most homeowners qualify for at least one carrier — even with pre-existing conditions. That's the entire advantage of working across 6 companies rather than one. Different carriers have different underwriting guidelines. We find the one that works for your situation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I signed up for bank coverage years ago — is it too late? <span class="faq-icon">+</span></div>
+        <div class="faq-a">It's not too late, but it does get more expensive with age. The longer you've held bank coverage, the more you've likely overpaid. Most people who switch after 5+ years with the bank are genuinely surprised at the savings available.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How is this different from just calling my bank? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Your bank can only offer their product. I'm independent — contracted with 6 carriers, with no loyalty to any of them. My only loyalty is to you finding the best coverage for your family at the best price. I can also include life, disability, and critical illness coverage your bank likely doesn't offer as a bundle.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How quickly can I get covered if I want to switch? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Most straightforward applications are approved within 24–48 hours. You won't have a gap in coverage — we time the switch so your new policy is active before you cancel the old one.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="final-cta">
+  <div class="container">
+    <h2>15 Minutes Could Change<br><em>What Protects Your Family</em></h2>
+    <p>No obligation. No pressure. No contact with your bank. Just an honest conversation with a licensed Alberta advisor who has access to every major carrier.</p>
+    <a href="#review-form" class="btn-cta-lg">Get My Free Review →</a>
+    <p class="cta-or">or call directly</p>
+    <a href="tel:+14035369824" class="cta-phone">(403) 536-9824</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Alberta <span>Mortgage Insurance</span> Review</div>
+        <a href="tel:+14035369824" class="footer-phone">(403) 536-9824</a>
+      </div>
+      <p class="footer-disclaimer">
+        Gavin Dyer, Licensed Life &amp; Disability Insurance Advisor. AIC Life Licence M-124004-SP-2025 &nbsp;·&nbsp; A&amp;S Licence Q-124004-SP-2025.<br>
+        Licensed in Alberta under the Insurance Act (RSA 2000, c I-3). This website provides general information only and does not constitute insurance advice. Coverage eligibility and premiums depend on individual health, age, and carrier underwriting guidelines.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── QUIZ LOGIC ──────────────────────────────────────────────────────────────
+var answers = {};
+
+document.addEventListener('click', function(e) {
+  var opt = e.target.closest('.quiz-opt');
+  if (!opt) return;
+
+  var q = parseInt(opt.getAttribute('data-q'));
+  var val = opt.getAttribute('data-val');
+  if (!q || !val) return;
+
+  answers[q] = val;
+
+  // Highlight selected option
+  var allOpts = document.querySelectorAll('#q' + q + ' .quiz-opt');
+  allOpts.forEach(function(o) { o.classList.remove('selected'); });
+  opt.classList.add('selected');
+
+  // Mark progress dot
+  var dot = document.getElementById('dot-' + (q - 1));
+  if (dot) dot.style.background = '#1757C2';
+
+  // Advance after short delay
+  setTimeout(function() {
+    if (q < 3) {
+      document.getElementById('q' + q).classList.remove('active');
+      document.getElementById('q' + (q + 1)).classList.add('active');
+    } else {
+      document.getElementById('q3').classList.remove('active');
+      showResult();
+    }
+  }, 350);
+});
+
+function showResult() {
+  var a1 = answers[1];
+  var a3 = answers[3];
+  var headline, body;
+
+  if (a1 === 'no') {
+    headline = 'Good news — you are likely already ahead of most.';
+    body = 'You already have individually-owned coverage. A quick review can confirm your coverage amount is still appropriate for your mortgage balance and that you are getting the best rate across carriers.';
+  } else if (a3 === 'family') {
+    headline = 'Something does not add up — let us look at this together.';
+    body = 'If your insurance is through your bank, the payout typically goes to the bank — not your family. Worth a 15-minute call to confirm exactly what you have and whether it works the way you think it does.';
+  } else {
+    headline = 'Based on your answers, a review could save you money and improve your coverage.';
+    body = 'Your bank creditor insurance likely has a declining benefit while your premiums stay flat — meaning you are paying the same for less each year. Find out what you would qualify for today.';
+  }
+
+  document.getElementById('result-headline').textContent = headline;
+  document.getElementById('result-body').textContent = body;
+  document.getElementById('quiz-result').classList.add('show');
+}
+
+function submitForm() {
+  var fname = document.getElementById('fname').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var email = document.getElementById('email').value.trim();
+
+  if (!fname || !phone || !email) {
+    alert('Please fill in your name, phone, and email to book your review.');
+    return;
+  }
+
+  var btn = document.querySelector('.btn-primary');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  var payload = {
+    access_key: '3a48208d-036e-46d1-8f7e-1619777408fe',
+    subject: 'New Mortgage Insurance Review Request — Alberta',
+    from_name: 'Alberta Mortgage Insurance Review',
+    name: fname + ' ' + document.getElementById('lname').value,
+    phone: phone,
+    email: email,
+    best_time: document.getElementById('best-time').value,
+    q1_bank_insurance: answers[1] || 'not answered',
+    q2_balance_decreased: answers[2] || 'not answered',
+    q3_who_gets_payout: answers[3] || 'not answered'
+  };
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    if (data.success) {
+      document.getElementById('contact-form-wrap').style.display = 'none';
+      document.getElementById('thank-you').style.display = 'block';
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Book My Free 15-Minute Review →';
+      alert('Something went wrong. Please call (403) 536-9824 directly.');
+    }
+  })
+  .catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'Book My Free 15-Minute Review →';
+    alert('Something went wrong. Please call (403) 536-9824 directly.');
+  });
+}
+
+// ── FAQ ACCORDION ───────────────────────────────────────────────────────────
+document.querySelectorAll('.faq-q').forEach(function(q) {
+  q.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+
+// ── SCROLL ANIMATIONS ────────────────────────────────────────────────────────
+var fadeEls = document.querySelectorAll('.section, .trust-strip, .urgency-bar');
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08 });
+fadeEls.forEach(function(el) {
+  el.classList.add('fade-in');
+  observer.observe(el);
+});
+
+// ── HIDE STICKY CTA WHEN FORM IS VISIBLE ─────────────────────────────────────
+var formEl = document.getElementById('review-form');
+var stickyCta = document.getElementById('sticky-cta');
+if (formEl && stickyCta) {
+  var formObserver = new IntersectionObserver(function(entries) {
+    stickyCta.style.display = entries[0].isIntersecting ? 'none' : '';
+  }, { threshold: 0.3 });
+  formObserver.observe(formEl);
+}
+
+// ── SMOOTH SCROLL ────────────────────────────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+
+<!-- ── STICKY MOBILE CTA ── -->
+<div class="sticky-cta" id="sticky-cta">
+  <p><strong>Free 15-min review.</strong> No obligation.</p>
+  <a href="#review-form" class="btn-sticky">Get My Free Review</a>
+</div>
+
+</body>
+</html>
